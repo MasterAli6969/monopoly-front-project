@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>User-profile</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav>
+        <!--------------------- ХЕДЕР ------------------->
+        <div class="bg-body-tertiary pt-3">
+          <div class="container d-flex justify-content-between flex-wrap">
+            <div>
+              <h1>Logo</h1>
+            </div>
+            <div
+              class="w-70 d-flex justify-content-around align-items-center m-3 flex-wrap"
+            >
+              <button type="button" class="btn btn-primary btn-lg rounded-5">
+                <a
+                  href="file:///home/ubuntu/monopoly-front-project/pages/user-profile.html"
+                  style="color: white; text-decoration: none"
+                  >Личный кабинет</a
+                >
+              </button>
+              <a
+                href="file:///home/ubuntu/monopoly-front-project/pages/shopping-empty-cart.html"
+                ><button
+                  type="button"
+                  class="btn btn-primary position-relative mx-3 rounded-5"
+                >
+                  <i class="bi bi-cart"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button></a
+              >
+              <div class="m-3">
+                <select
+                  class="form-select"
+                  id="floatingSelect"
+                  aria-label="Floating label select example"
+                >
+                  <option selected>Русский</option>
+                  <option value="1">Английский</option>
+                </select>
+              </div>
+
+              <h4 class="m-3">8 800 55 35 35</h4>
+            </div>
+          </div>
+          <div class="container my-3">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid d-flex justify-content-end">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse align-items-center"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Купить подарочную карту
+                      </a>
+
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                            >Все</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Сидим дома</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Хобби и досуг</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Электроника</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Косметика</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Салоны красоты</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Компьютерные программы</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Детские товары</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Ювелирные украшения</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Игры</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Зоотовары</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Услуги</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Авто</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Экотовары</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Подарки</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Аксессуары</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Книги</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Одежда и обувь</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Товары для дома</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Развлечения</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Образование</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Спорт</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Рестораны</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Еда и напитки</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Благотворительность</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Продукты</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Путешествия</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Корпоративным клиентам
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Корпоративным клиентам</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Электронные подарочные карты</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Универсальная подарочная карта</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Giftery Card</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Giftery Card с дополненной реальностью</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Подарочные карты магазинов</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Банковские подарочные карты</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Топливные подарочные карты</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Карты оплаты мобильной связи</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">API интеграция</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Витрина вознаграждений</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Личный кабинет</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Для корпоративных клиентов</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Акции и скидки</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Кейсы клиентов Giftery</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Отзывы B2B-клиентов</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Видеоуроки по автоматизации</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >программ мотивациии</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Ритейлерам
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Виджет для продажи <br />подарочных карт</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Запустите новый канал<br />
+                            продаж за 1 день</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        О компании
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">О Giftery</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Пресса о нас</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Новости</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Бонусная программа</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Карьера в Giftery</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >О деятельности ИТ-компании ООО «ГИФТЕРИ»</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >О деятельности ИТ-компании ООО «ГИФТЕРИ.РУ»</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Оферты</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Для физ. лиц</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Для корпоративных клиентов</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Для партнеров (ритейлеров)</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Обменять Giftery Card</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-5 col-sm-12">
+            <!--------------------- БОКОВАЯ ПАНЕЛЬ ------------------->
+            <div
+              class="btn-group-vertical mb-4 w-100"
+              role="group"
+              aria-label="Vertical radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check btn-lg"
+                name="vbtn-radio"
+                id="vbtn-radio1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-outline-primary p-3" for="vbtn-radio1"
+                >Полученные
+                <span class="badge bg-primary rounded-pill">0</span></label
+              >
+              <input
+                type="radio"
+                class="btn-check btn-lg"
+                name="vbtn-radio"
+                id="vbtn-radio2"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary p-3" for="vbtn-radio2"
+                >Отправленные
+                <span class="badge bg-primary rounded-pill">0</span></label
+              >
+              <input
+                type="radio"
+                class="btn-check btn-lg"
+                name="vbtn-radio"
+                id="vbtn-radio3"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary p-3" for="vbtn-radio3"
+                >Ожидают оплаты
+                <span class="badge bg-primary rounded-pill">0</span></label
+              >
+              <input
+                type="radio"
+                class="btn-check btn-lg"
+                name="vbtn-radio"
+                id="vbtn-radio4"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary p-3" for="vbtn-radio4"
+                >Каталог подарочных карт
+                <span class="badge bg-primary rounded-pill">0</span></label
+              >
+            </div>
+            <div></div>
+          </div>
+          <div class="col-md-9 mb-5 col-sm-12">
+            <!--------------------- ДАННЫЕ ЮЗЕРА ------------------->
+            <!--------------------- К КНОПКЕ "Полученные" ------------------->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center rounded-1 p-5 shadow"
+              style="background-color: #f6f6f6"
+            >
+              <i class="bi bi-gift mb-4" style="font-size: 100px"></i>
+              <h4 class="mb-4 text-center">
+                Вам пока никто не отправил подарочный сертификат, но это можете
+                сделать вы!
+              </h4>
+              <button type="button" class="btn btn-primary btn-lg w-75">
+                Отправить сейчас!
+              </button>
+            </div>
+            <hr />
+            <!--------------------- К КНОПКЕ "Отправленные" ------------------->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center rounded-1 p-5 shadow"
+              style="background-color: #f6f6f6"
+            >
+              <i class="bi bi-gift mb-4" style="font-size: 100px"></i>
+              <h4 class="mb-4 text-center">
+                Вы еще никому не отправили подарочный сертификат.
+              </h4>
+              <button type="button" class="btn btn-primary btn-lg w-75">
+                Отправить сейчас!
+              </button>
+            </div>
+            <hr />
+            <!--------------------- БЛОКИ "Ожидают оплаты" ------------------->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center rounded-1 p-5 shadow"
+              style="background-color: #f6f6f6"
+            >
+              <i class="bi bi-check-lg mb-4" style="font-size: 100px"></i>
+              <h4 class="mb-4 text-center">
+                У вас нет сертификатов, ожидающих оплаты.
+              </h4>
+              <button type="button" class="btn btn-primary btn-lg w-75">
+                Отправить сейчас!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 pt-5 pb-5" style="background-color: #0b132a">
+        <!--------------------- БЛОК ФУТТЕР ------------------->
+        <footer class="container">
+          <div style="color: white">
+            <h1 class="logo">LOGO</h1>
+          </div>
+          <div class="d-flex flex-wrap">
+            <nav class="nav flex-column" style="color: white">
+              <h4>Подарочные карты</h4>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                >Каталог</a
+              >
+              <a
+                class="nav-link"
+                href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                >Благотворительность</a
+              >
+              <a class="nav-link" href="#">Активация карт сотовой связи</a>
+              <a class="nav-link" href="#">Обменять Giftery Card</a>
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>О компании</h4>
+              <a class="nav-link active" aria-current="page" href="#"
+                >О Giftery</a
+              >
+              <a class="nav-link" href="#">Пресса о нас</a>
+              <a class="nav-link" href="#">Новости</a>
+              <a class="nav-link" href="#">Бонусная программа</a>
+              <a class="nav-link" href="#">Карьера в Giftery</a>
+              <a class="nav-link" href="#">
+                О деятельности ИТ-компании <br />
+                ООО «ГИФТЕРИ»</a
+              >
+              <a class="nav-link" href="#">
+                О деятельности ИТ-компании<br />
+                ООО «ГИФТЕРИ.РУ»</a
+              >
+              <a class="nav-link" href="#">Оферта для физ. лиц</a>
+              <a class="nav-link" href="#">
+                Оферта для корпоративных <br />
+                клиентов</a
+              >
+              <a class="nav-link" href="#">
+                Оферта для партнеров <br />(ритейлеров)</a
+              >
+              <a class="nav-link" href="#">Контакты</a>
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Корпоративным клиентам</h4>
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              <a class="nav-link" href="#"> Корпоративным клиентам</a>
+              <a class="nav-link" href="#"> Электронные подарочные карты</a>
+              <a class="nav-link" href="#">
+                Универсальная подарочная карта Giftery Card</a
+              >
+              <a class="nav-link" href="#">Подарочные карты магазинов</a>
+              <a class="nav-link" href="#">Банковские подарочные карты</a>
+              <a class="nav-link" href="#">Топливные подарочные карты</a>
+              <a class="nav-link" href="#">Карты оплаты мобильной связи</a>
+              <a class="nav-link" href="#">Кейсы клиентов Giftery</a>
+              <a class="nav-link" href="#">
+                Видеоуроки по автоматизации <br />программ мотивациии</a
+              >
+              <a class="nav-link" href="#"> API интеграция</a>
+              <a class="nav-link" href="#">
+                Виджет для продажи подарочных карт</a
+              >
+              <a class="nav-link" href="#">
+                Запустите новый канал продаж за 1 день</a
+              >
+              <a class="nav-link" href="#">Витрина вознаграждений</a>
+              <a class="nav-link" href="#">Личный кабинет для ритейлеров</a>
+              <a class="nav-link" href="#">
+                Личный кабинет для корпоративных клиентов</a
+              >
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Прочее</h4>
+              <a class="nav-link" href="#"> API интеграция</a>
+              <a class="nav-link" href="#">
+                Виджет для продажи подарочных карт</a
+              >
+              <a class="nav-link" href="#">
+                Запустите новый канал продаж за 1 день</a
+              >
+              <a class="nav-link" href="#">Витрина вознаграждений</a>
+              <a class="nav-link" href="#">Личный кабинет для ритейлеров</a>
+              <a class="nav-link" href="#">
+                Личный кабинет для корпоративных клиентов</a
+              >
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Контакты</h4>
+              <p>
+                Клиентская поддержка для физических лиц по вопросам покупки,
+                отправки, использования сертификатов
+              </p>
+              <a class="nav-link" href="#">8 800 551 46 19</a>
+              <a class="nav-link" href="#">+7 499 653 84 68</a>
+              <a class="nav-link" href="#">support@giftery.ru</a>
+              <p>Отдел продаж (для юридических лиц)</p>
+              <a class="nav-link" href="#">+7 499 444 32 57</a>
+              <a class="nav-link" href="#">b2b@giftery.ru</a>
+              <p>Отдел продаж (для юридических лиц)</p>
+              <a class="nav-link" href="#">+7 (499) 302 36 32</a>
+              <a class="nav-link" href="#">partners@giftery.ru</a>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

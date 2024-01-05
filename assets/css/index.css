@@ -1,0 +1,38 @@
+.custom_index_block3_card_link {
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.custom_index_block3_card_body:hover .custom_index_block3_card_link {
+  opacity: 1;
+}
+
+.custom_index_block3_card_link_exampleModal {
+  list-style: disc;
+  margin: 10px;
+}
+
+.custom_index_block3_card_modal_img {
+  width: 300px;
+  height: 130px;
+}
+.custom_index_block3_card_modal_description {
+  max-width: 400px;
+}
+
+.custom_index_block3_card_modal_buttons {
+  width: 250px;
+}
+
+.custom_index_block6_card_body:hover {
+  background-color: #0b5ed7;
+}
+
+.custom_index_block6_card_body_hover_img {
+  transition: transform 0.3s ease;
+}
+
+.custom_index_block6_card_body:hover .custom_index_block6_card_body_hover_img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}

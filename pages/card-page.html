@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/css/card-page.css" />
+    <title>Card</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container-fluid bg-body-tertiary pt-3 mb-5">
+        <!--------------------- ХЕДЕР ------------------->
+        <div class="container d-flex justify-content-between flex-wrap">
+          <div>
+            <h1>Logo</h1>
+          </div>
+          <div
+            class="w-70 d-flex justify-content-around align-items-center m-3 flex-wrap"
+          >
+            <button type="button" class="btn btn-primary btn-lg rounded-5">
+              Личный кабинет
+            </button>
+            <a
+              href="file:///home/ubuntu/monopoly-front-project/pages/shopping-empty-cart.html"
+              ><button
+                type="button"
+                class="btn btn-primary position-relative mx-3 rounded-5"
+              >
+                <i class="bi bi-cart"></i>
+                <span
+                  id="_cartIconNumber"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button></a
+            >
+            <div class="m-3">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>Русский</option>
+                <option value="1">Английский</option>
+              </select>
+            </div>
+
+            <h4 class="m-3">8 800 55 35 35</h4>
+          </div>
+        </div>
+        <div class="container my-3">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-end">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse align-items-center"
+                id="navbarNavDropdown"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Купить подарочную карту
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Все</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Сидим дома</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Хобби и досуг</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Электроника</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Косметика</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Салоны красоты</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Компьютерные программы</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Детские товары</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Ювелирные украшения</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Игры</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Зоотовары</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Услуги</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Авто</a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">Экотовары</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Подарки</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Аксессуары</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Книги</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Одежда и обувь</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Товары для дома</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Развлечения</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Образование</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Спорт</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Рестораны</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Еда и напитки</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Благотворительность</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Продукты</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Путешествия</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Корпоративным клиентам
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Корпоративным клиентам</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Электронные подарочные карты</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Универсальная подарочная карта</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Giftery Card</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Giftery Card с дополненной реальностью</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Подарочные карты магазинов</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Банковские подарочные карты</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Топливные подарочные карты</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Карты оплаты мобильной связи</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">API интеграция</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Витрина вознаграждений</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Личный кабинет</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Для корпоративных клиентов</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Акции и скидки</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Кейсы клиентов Giftery</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Отзывы B2B-клиентов</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Видеоуроки по автоматизации</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >программ мотивациии</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Ритейлерам
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Виджет для продажи <br />подарочных карт</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Запустите новый канал<br />
+                          продаж за 1 день</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      О компании
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">О Giftery</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Пресса о нас</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Новости</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Бонусная программа</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Карьера в Giftery</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >О деятельности ИТ-компании ООО «ГИФТЕРИ»</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >О деятельности ИТ-компании ООО «ГИФТЕРИ.РУ»</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="#">Оферты</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Для физ. лиц</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Для корпоративных клиентов</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Для партнеров (ритейлеров)</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Обменять Giftery Card</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="container _cardPage">
+        <div class="row justify-content-between">
+          <div class="col-12 mb-5 gog">
+            <!--------------------- Хлебные крошки и загаловок ------------------->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Главная </a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Подарочные сертификаты и карты
+                </li>
+              </ol>
+            </nav>
+            <h3>Подарочные сертификаты и карты</h3>
+          </div>
+          <div class="col-md-6 col-sm-12 mb-5">
+            <!--------------------- СЛАЙДЕР ИЗОБРАЖЕНИЙ САМОЙ КАРТОЧКИ ------------------->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div
+                  class="carousel-item active"
+                  data-bs-interval="10000"
+                  style="background-color: white"
+                >
+                  <div
+                    class="container d-flex justify-content-center flex-wrap my-3"
+                  >
+                    <div>
+                      <img
+                        src="../img/lorem-inage-default1.jpg"
+                        class="img-thumbnail"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item"
+                  data-bs-interval="10000"
+                  style="background-color: white"
+                >
+                  <div
+                    class="container d-flex justify-content-center flex-wrap my-3"
+                  >
+                    <div>
+                      <img
+                        src="../img/lorem-inage-default2.jpg"
+                        class="img-thumbnail"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item"
+                  data-bs-interval="10000"
+                  style="background-color: white"
+                >
+                  <div
+                    class="container d-flex justify-content-center flex-wrap my-3"
+                  >
+                    <div>
+                      <img
+                        src="../img/lorem-inage-default1.jpg"
+                        class="img-thumbnail"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <!--------------------- НЕПОСРЕДСТВЕННО КАРТОЧКА ------------------->
+            <div
+              class="w-100 d-flex flex-wrap justify-content-between align-items-center pt-3 mb-4"
+            >
+              <div style="max-width: 130px">
+                <p>Наминал</p>
+                <select
+                  class="form-select"
+                  id="floatingSelect"
+                  aria-label="Floating label select example"
+                >
+                  <option selected>100</option>
+                  <option value="1">200</option>
+                  <option value="2">500</option>
+                  <option value="3">1000</option>
+                  <option value="4">1500</option>
+                  <option value="5">2000</option>
+                  <option value="6">3000</option>
+                  <option value="">4000</option>
+                </select>
+              </div>
+              <div style="max-width: 130px">
+                <p>Количество</p>
+                <div class="d-flex align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary _removeDuplicateProducts"
+                  >
+                    <i class="bi bi-dash-circle"></i>
+                  </button>
+                  <p class="mx-3 mb-0 _quantityProducts">1</p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary _addDuplicateProducts"
+                  >
+                    <i class="bi bi-plus-circle"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Обмен на одну или несколько карт Lamoda, ЛитРес и другие.
+                <a href="#">Стандартный список обмена</a>
+              </li>
+              <li>Выберите дизайн или <a href="#">загрузите свой</a></li>
+              <li>Смотрите также <a href="#">Premium Giftery Card</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div class="col-12 mb-5">
+            <!--------------------- ТРИ КНОПКИ ------------------->
+            <div
+              class="d-flex justify-content-between align-items-center flex-wrap"
+            >
+              <button type="button" class="btn btn-outline-secondary">
+                Secondary
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Secondary
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Secondary
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-sm-12 mb-5 p-0 rounded-2"
+            style="background-color: #f9fafb"
+          >
+            <!--------------------- КОМУ ОТПРАВИТЬ? ЧЕКБОКСЫ ------------------->
+            <div
+              class="d-flex justify-content-around rounded-top p-3"
+              style="background-color: #6e7882"
+            >
+              <p>Кому отправить?</p>
+              <p>1/4</p>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-between p-5"
+              style="height: 400px"
+            >
+              <div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Default radio
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Default checked radio
+                  </label>
+                </div>
+              </div>
+              <div>
+                <hr />
+                <p>
+                  Сертификат будет отправлен на email или в sms получателя,
+                  сразу или в указанную дату и время
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12 mb-5 p-0 rounded-2 d-flex flex-column">
+            <!--------------------- ФОРМА ДЛЯ ОФОРМЛЕНИЯ КАРТЫ ------------------->
+            <div
+              class="d-flex rounded-top p-3"
+              style="background-color: #f3f5f6"
+            >
+              <p class="muted">
+                Отправитель
+                <i
+                  class="bi bi-exclamation-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Обязательно укажите ваш e-mail"
+                ></i>
+              </p>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-between p-5"
+              style="height: 400px"
+            >
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Имя</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email*</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+              </form>
+              <div class="d-flex justify-content-between align-items-center">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg rounded-5 _buttonAddCart"
+                >
+                  Добавить в корзину
+                </button>
+                <button type="button" class="btn btn-primary btn-lg rounded-5">
+                  Далее <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <!--------------------- АККОРДИОНЫ ------------------->
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center mb-5"
+            >
+              <div>
+                <h3 class="mb-3 fw-bolder">
+                  Хотите сделать корпоративный заказ?
+                </h3>
+                <p>
+                  Оставьте заявку на сайте и мы свяжемся с вами в ближайшее
+                  время
+                </p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg rounded-5 w-25"
+              >
+                <a href="#" style="color: white; text-decoration: none">
+                  Оставить заявку</a
+                >
+              </button>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Как отправить?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show p-3"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div
+                    class="accordion-body d-flex justify-content-center flex-wrap p-0 mb-5"
+                  >
+                    <div class="card" style="width: 25rem">
+                      <div
+                        class="card-body d-flex flex-column align-items-center justify-content-center text-center"
+                      >
+                        <img
+                          src="../img/lorem-inage-default1.jpg"
+                          class="img-thumbnail mb-4"
+                        />
+                        <h5 class="card-title mb-3">Оформите</h5>
+                        <p class="card-text">
+                          Выберите номинал, дизайн, количество и напишите
+                          поздравление
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 25rem">
+                      <div
+                        class="card-body d-flex flex-column align-items-center justify-content-center text-center"
+                      >
+                        <img
+                          src="../img/lorem-inage-default2.jpg"
+                          class="img-thumbnail mb-4"
+                        />
+                        <h5 class="card-title mb-3">Оформите</h5>
+                        <p class="card-text">
+                          Выберите номинал, дизайн, количество и напишите
+                          поздравление
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 25rem">
+                      <div
+                        class="card-body d-flex flex-column align-items-center justify-content-center text-center"
+                      >
+                        <img
+                          src="../img/lorem-inage-default1.jpg"
+                          class="img-thumbnail mb-4"
+                        />
+                        <h5 class="card-title mb-3">Оформите</h5>
+                        <p class="card-text">
+                          Выберите номинал, дизайн, количество и напишите
+                          поздравление
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>
+                      <strong>Протестируйте:</strong> отправьте себе письмо с
+                      примером
+                    </p>
+                  </div>
+                  <form
+                    class="d-flex justify-content-between align-items-center flex-wrap"
+                  >
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Имя</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Email*</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg rounded-5"
+                    >
+                      Далее <i class="bi bi-arrow-right-circle-fill"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Как воспользоваться?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse p-3"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="mb-5">
+                      <h3 class="fw-bolder mb-3">
+                        Как воспользоваться сертификатом Giftery Card
+                      </h3>
+                      <p class="mb-3">
+                        Дарите только нужные подарки. Получатель сможет обменять
+                        Giftery Card на подарочные карты известных брендов из
+                        списка обмена (ссылка на список обмена расположена в
+                        разделе "Правила", пункт 2). Для получения полной
+                        информации <a href="">посетите сайт</a>. Полный список
+                        доступных для обмена брендов можно посмотреть
+                        <a href="">здесь</a>.
+                      </p>
+                      <p class="p-0 m-0">
+                        Для получения полной информации
+                        <a href="#">посетите сайт</a>.
+                      </p>
+                      <p class="p-0 m-0">
+                        Полный список доступных для обмена брендов можно
+                        посмотреть <a href="#">здесь</a>.
+                      </p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-center flex-wrap p-0 mb-5"
+                    >
+                      <div class="card p-5 m-1" style="width: 25rem">
+                        <div
+                          class="card-body d-flex flex-column align-items-center justify-content-center text-center"
+                        >
+                          <i class="bi bi-clock-history fs-1"></i>
+                          <p class="card-text">
+                            Обратите внимание на срок действия сертификата и
+                            <a href="#">условия использования</a>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card p-5 m-1" style="width: 25rem">
+                        <div
+                          class="card-body d-flex flex-column align-items-center justify-content-center text-center"
+                        >
+                          <i class="bi bi-box-seam fs-1"></i>
+                          <p class="card-text">
+                            Обменяйте Giftery Card в рамках номинала на один или
+                            несколько сертификатов
+                            <a href="#">из этого списка</a> брендов.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card p-5 m-1" style="width: 25rem">
+                        <div
+                          class="card-body d-flex flex-column align-items-center justify-content-center text-center"
+                        >
+                          <i class="bi bi-envelope-paper fs-1"></i>
+                          <p class="card-text">
+                            Сразу после обмена Вам на почту придет письмо с
+                            подарочной картой выбранного бренда
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Правила
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-5">
+                    <ol>
+                      <li class="mb-3">
+                        Универсальный подарочный сертификат Giftery Card
+                        необходимо обменять на сайте
+                        <a href="#">https://www.giftery.ru/redeem</a>
+                        на один или несколько сертификатов Партнеров из каталога
+                        обмена полученного сертификата.
+                      </li>
+                      <li class="mb-3">
+                        Giftery Card можно обменять на сертификаты любых брендов
+                        и номиналов из каталога
+                        <a href="#">https://www.giftery.ru/info/gifterycard</a>
+                        в рамках баланса.
+                      </li>
+                      <li class="mb-3">
+                        Остаток баланса Giftery Card не сгорает до окончания
+                        срока действия - держатель может израсходовать его
+                        полностью или частично и вернуться к выбору позже.
+                      </li>
+                      <li class="mb-3">
+                        Если держатель в течение срока действия не
+                        воспользовался Giftery Card полностью или частично,
+                        сертификат становится недействительным. При этом вся
+                        сумма баланса сгорает.
+                      </li>
+                      <li class="mb-3">
+                        Универсальный подарочный сертификат Giftery Card не
+                        является ценной бумагой и не подлежит обмену на денежные
+                        средства.
+                      </li>
+                      <li class="mb-3">
+                        Универсальный подарочный сертификат можно передавать
+                        любым лицам по своему усмотрению. При передаче
+                        универсального подарочного сертификата третьим лицам
+                        держатель универсального подарочного сертификата обязан
+                        проинформировать получателя об условиях обмена Giftery
+                        Card на сертификаты Партнеров, входящих в список обмена
+                        полученного сертификата. В случае нарушения этой
+                        обязанности держателями универсального подарочного
+                        сертификата Giftery Card, ООО «ГИФТЕРИ.РУ», по
+                        претензиям, связанным с отсутствием вышеуказанной
+                        информации, ответственности не несет.
+                      </li>
+                      <li class="mb-3">
+                        Универсальный подарочный сертификат возврату не
+                        подлежит.
+                      </li>
+                      <li class="mb-3">
+                        Дополнительную информацию о Giftery Card можно получить
+                        на странице
+                        <a href="#">http://www.giftery.ru/info/gifterycard</a>
+                        или по телефону 8-800 551 47 24.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <!--------------------- КАРТОЧКИ РЕКОМЕНДАЦИЙ ------------------->
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <h2 class="fw-bolder">Также вас может заинтересовать</h2>
+              <div class="container d-flex justify-content-center flex-wrap">
+                <div class="card" style="width: 18rem; margin: 10px">
+                  <div
+                    class="card-body d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div>
+                      <img
+                        src="../img/lorem-inage-default1.jpg"
+                        class="img-thumbnail"
+                      />
+                      <h5 class="card-title mb-5">
+                        Подписка на онлайн-кинотеатр PREMIER
+                      </h5>
+                    </div>
+                    <div>
+                      <p class="card-text">Номинал</p>
+                      <h5 class="card-text">От 149 до 799</h5>
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-primary w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal6"
+                      >
+                        Купить
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal6"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-lg modal-dialog-centered"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel"
+                              >
+                                Modal title
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div
+                                class="d-flex justify-content-between flex-wrap mb-5"
+                              >
+                                <img
+                                  src="../img/lorem-inage-default1.jpg"
+                                  class="img-thumbnail custom_index_block3_card_modal_img"
+                                />
+                                <div
+                                  class="px-2 custom_index_block3_card_modal_description"
+                                >
+                                  <h4 class="mb-3">Giftery Card</h4>
+                                  <p>
+                                    Дарите только нужные подарки. Получатель
+                                    сможет обменять Giftery Card на подарочные
+                                    карты известных брендов из списка обмена
+                                    (ссылка на список обмена расположена в
+                                    разделе "Правила", пункт 2).
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex justify-content-around flex-wrap mb-5"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Large button
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Large button
+                                </button>
+                              </div>
+                              <div
+                                class="container-fluid d-flex justify-content-around flex-wrap mb-5 bg-primary p-3"
+                              >
+                                <div
+                                  class="card d-flex flex-column align-items-center rounded-3"
+                                  style="width: 18rem"
+                                >
+                                  <i class="bi bi-mailbox-flag fs-1"></i>
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      Обменяйте Giftery Card в рамках номинала
+                                      на один или несколько сертификатов из
+                                      каталога Giftery
+                                    </p>
+                                  </div>
+                                </div>
+                                <div
+                                  class="card d-flex flex-column align-items-center rounded-3"
+                                  style="width: 18rem"
+                                >
+                                  <i class="bi bi-mailbox-flag fs-1"></i>
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      Обменяйте Giftery Card в рамках номинала
+                                      на один или несколько сертификатов из
+                                      каталога Giftery
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex justify-content-around flex-wrap"
+                              >
+                                <div
+                                  class="px-2 custom_index_block3_card_modal_description"
+                                >
+                                  <h4 class="mb-3 fw-bolder">
+                                    Корпоративный заказ
+                                  </h4>
+                                  <p>Закажите подарочные карты оптом.</p>
+                                </div>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Оставить заявку
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem; margin: 10px">
+                  <div
+                    class="card-body d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div>
+                      <img
+                        src="../img/lorem-inage-default2.jpg"
+                        class="img-thumbnail"
+                      />
+                      <h5 class="card-title mb-5">
+                        Подписка на онлайн-кинотеатр PREMIER
+                      </h5>
+                    </div>
+                    <div>
+                      <p class="card-text">Номинал</p>
+                      <h5 class="card-text">От 149 до 799</h5>
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-primary w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal7"
+                      >
+                        Купить
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal7"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-lg modal-dialog-centered"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel"
+                              >
+                                Modal title
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div
+                                class="d-flex justify-content-between flex-wrap mb-5"
+                              >
+                                <img
+                                  src="../img/lorem-inage-default2.jpg"
+                                  class="img-thumbnail custom_index_block3_card_modal_img"
+                                />
+                                <div
+                                  class="px-2 custom_index_block3_card_modal_description"
+                                >
+                                  <h4 class="mb-3">Giftery Card</h4>
+                                  <p>
+                                    Дарите только нужные подарки. Получатель
+                                    сможет обменять Giftery Card на подарочные
+                                    карты известных брендов из списка обмена
+                                    (ссылка на список обмена расположена в
+                                    разделе "Правила", пункт 2).
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex justify-content-around flex-wrap mb-5"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Large button
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Large button
+                                </button>
+                              </div>
+                              <div
+                                class="container-fluid d-flex justify-content-around flex-wrap mb-5 bg-primary p-3"
+                              >
+                                <div
+                                  class="card d-flex flex-column align-items-center rounded-3"
+                                  style="width: 18rem"
+                                >
+                                  <i class="bi bi-mailbox-flag fs-1"></i>
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      Обменяйте Giftery Card в рамках номинала
+                                      на один или несколько сертификатов из
+                                      каталога Giftery
+                                    </p>
+                                  </div>
+                                </div>
+                                <div
+                                  class="card d-flex flex-column align-items-center rounded-3"
+                                  style="width: 18rem"
+                                >
+                                  <i class="bi bi-mailbox-flag fs-1"></i>
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      Обменяйте Giftery Card в рамках номинала
+                                      на один или несколько сертификатов из
+                                      каталога Giftery
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex justify-content-around flex-wrap"
+                              >
+                                <div
+                                  class="px-2 custom_index_block3_card_modal_description"
+                                >
+                                  <h4 class="mb-3 fw-bolder">
+                                    Корпоративный заказ
+                                  </h4>
+                                  <p>Закажите подарочные карты оптом.</p>
+                                </div>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Оставить заявку
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem; margin: 10px">
+                  <div
+                    class="card-body d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div>
+                      <img
+                        src="../img/lorem-inage-default1.jpg"
+                        class="img-thumbnail"
+                      />
+                      <h5 class="card-title mb-5">
+                        Подписка на онлайн-кинотеатр PREMIER
+                      </h5>
+                    </div>
+                    <div>
+                      <p class="card-text">Номинал</p>
+                      <h5 class="card-text">От 149 до 799</h5>
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-primary w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal8"
+                      >
+                        Купить
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal8"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-lg modal-dialog-centered"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel"
+                              >
+                                Modal title
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div
+                                class="d-flex justify-content-between flex-wrap mb-5"
+                              >
+                                <img
+                                  src="../img/lorem-inage-default1.jpg"
+                                  class="img-thumbnail custom_index_block3_card_modal_img"
+                                />
+                                <div
+                                  class="px-2 custom_index_block3_card_modal_description"
+                                >
+                                  <h4 class="mb-3">Giftery Card</h4>
+                                  <p>
+                                    Дарите только нужные подарки. Получатель
+                                    сможет обменять Giftery Card на подарочные
+                                    карты известных брендов из списка обмена
+                                    (ссылка на список обмена расположена в
+                                    разделе "Правила", пункт 2).
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex justify-content-around flex-wrap mb-5"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Large button
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Large button
+                                </button>
+                              </div>
+                              <div
+                                class="container-fluid d-flex justify-content-around flex-wrap mb-5 bg-primary p-3"
+                              >
+                                <div
+                                  class="card d-flex flex-column align-items-center rounded-3"
+                                  style="width: 18rem"
+                                >
+                                  <i class="bi bi-mailbox-flag fs-1"></i>
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      Обменяйте Giftery Card в рамках номинала
+                                      на один или несколько сертификатов из
+                                      каталога Giftery
+                                    </p>
+                                  </div>
+                                </div>
+                                <div
+                                  class="card d-flex flex-column align-items-center rounded-3"
+                                  style="width: 18rem"
+                                >
+                                  <i class="bi bi-mailbox-flag fs-1"></i>
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      Обменяйте Giftery Card в рамках номинала
+                                      на один или несколько сертификатов из
+                                      каталога Giftery
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex justify-content-around flex-wrap"
+                              >
+                                <div
+                                  class="px-2 custom_index_block3_card_modal_description"
+                                >
+                                  <h4 class="mb-3 fw-bolder">
+                                    Корпоративный заказ
+                                  </h4>
+                                  <p>Закажите подарочные карты оптом.</p>
+                                </div>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Оставить заявку
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem; margin: 10px">
+                  <div
+                    class="card-body d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div>
+                      <img
+                        src="../img/lorem-inage-default2.jpg"
+                        class="img-thumbnail"
+                      />
+                      <h5 class="card-title mb-5">
+                        Подписка на онлайн-кинотеатр PREMIER
+                      </h5>
+                    </div>
+                    <div>
+                      <p class="card-text">Номинал</p>
+                      <h5 class="card-text">От 149 до 799</h5>
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-primary w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal8"
+                      >
+                        Купить
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal8"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-lg modal-dialog-centered"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel"
+                              >
+                                Modal title
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div
+                                class="d-flex justify-content-between flex-wrap mb-5"
+                              >
+                                <img
+                                  src="../img/lorem-inage-default2.jpg"
+                                  class="img-thumbnail custom_index_block3_card_modal_img"
+                                />
+                                <div
+                                  class="px-2 custom_index_block3_card_modal_description"
+                                >
+                                  <h4 class="mb-3">Giftery Card</h4>
+                                  <p>
+                                    Дарите только нужные подарки. Получатель
+                                    сможет обменять Giftery Card на подарочные
+                                    карты известных брендов из списка обмена
+                                    (ссылка на список обмена расположена в
+                                    разделе "Правила", пункт 2).
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex justify-content-around flex-wrap mb-5"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Large button
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Large button
+                                </button>
+                              </div>
+                              <div
+                                class="container-fluid d-flex justify-content-around flex-wrap mb-5 bg-primary p-3"
+                              >
+                                <div
+                                  class="card d-flex flex-column align-items-center rounded-3"
+                                  style="width: 18rem"
+                                >
+                                  <i class="bi bi-mailbox-flag fs-1"></i>
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      Обменяйте Giftery Card в рамках номинала
+                                      на один или несколько сертификатов из
+                                      каталога Giftery
+                                    </p>
+                                  </div>
+                                </div>
+                                <div
+                                  class="card d-flex flex-column align-items-center rounded-3"
+                                  style="width: 18rem"
+                                >
+                                  <i class="bi bi-mailbox-flag fs-1"></i>
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      Обменяйте Giftery Card в рамках номинала
+                                      на один или несколько сертификатов из
+                                      каталога Giftery
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex justify-content-around flex-wrap"
+                              >
+                                <div
+                                  class="px-2 custom_index_block3_card_modal_description"
+                                >
+                                  <h4 class="mb-3 fw-bolder">
+                                    Корпоративный заказ
+                                  </h4>
+                                  <p>Закажите подарочные карты оптом.</p>
+                                </div>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Оставить заявку
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-5 p-5">
+            <!--------------------- ПРОЧАЯ ИНФОРМАЦИЯ ------------------->
+            <h3 class="fw-bolder mb-3">Электронный сертификат Giftery Card</h3>
+            <hr class="mb-3" />
+            <h3 class="fw-bolder mb-3">
+              Как воспользоваться универсальной подарочной картой Giftery Card?
+            </h3>
+            <p class="mb-3">
+              Подарочная карта отправляется на электронную почту или телефон
+              получателя.
+            </p>
+            <ul class="mb-5">
+              <li>
+                Чтобы воспользоваться Giftery Card, получателю необходимо
+                обменять мультибрендовую подарочную карту на 1 или несколько
+                подарочных карт брендов из списка обмена Giftery Card. Можно
+                использовать Giftery Card сразу или частично. Остаток не сгорает
+                до конца срока действия.
+              </li>
+              <li>
+                Получатель на странице обмена вводит номер и пин-код
+                мультибрендовой подарочной карты, выбирает нужные бренды и
+                номиналы, знакомится с уловиями использования подарочных карт
+                брендов.
+              </li>
+              <li>
+                Подарочные карты выбранных брендов мгновенно будут отправлены на
+                электронную почту получателя.
+              </li>
+              <li>
+                Полученные подарочные карты брендов можно распечатать или
+                сохранить в формате PDF, предъявить на кассе или использовать
+                онлайн в интернет-магазине.
+              </li>
+            </ul>
+            <h3 class="fw-bolder mb-3">Электронный сертификат Giftery Card</h3>
+            <p class="mb-3">
+              Это идеальный вариант подарка! Giftery Card представляет собой
+              мультибрендовую подарочную карту, которую можно обменять на один
+              или несколько сертификатов брендов, представленных в списке обмена
+              Giftery Card. Получатель сам решит, что выбрать, и точно останется
+              доволен!
+            </p>
+            <p class="mb-3">
+              Мы сотрудничаем с более чем 200 ведущими брендами. Большинство
+              партнеров Giftery осуществляют доставку или имеют торговые точки
+              по всей России. Однако перед приобретением универсального
+              подарочного сертификата мы все же советуем внимательно
+              ознакомиться со списком городов, где присутствуют обслуживающие
+              его бренды.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 pt-5 pb-5" style="background-color: #0b132a">
+        <!--------------------- БЛОК ФУТТЕР ------------------->
+        <footer class="container">
+          <div style="color: white">
+            <h1 class="logo">LOGO</h1>
+          </div>
+          <div class="d-flex flex-wrap">
+            <nav class="nav flex-column" style="color: white">
+              <h4>Подарочные карты</h4>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Каталог</a
+              >
+              <a class="nav-link" href="#">Благотворительность</a>
+              <a class="nav-link" href="#">Активация карт сотовой связи</a>
+              <a class="nav-link" href="#">Обменять Giftery Card</a>
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>О компании</h4>
+              <a class="nav-link active" aria-current="page" href="#"
+                >О Giftery</a
+              >
+              <a class="nav-link" href="#">Пресса о нас</a>
+              <a class="nav-link" href="#">Новости</a>
+              <a class="nav-link" href="#">Бонусная программа</a>
+              <a class="nav-link" href="#">Карьера в Giftery</a>
+              <a class="nav-link" href="#">
+                О деятельности ИТ-компании <br />
+                ООО «ГИФТЕРИ»</a
+              >
+              <a class="nav-link" href="#">
+                О деятельности ИТ-компании<br />
+                ООО «ГИФТЕРИ.РУ»</a
+              >
+              <a class="nav-link" href="#">Оферта для физ. лиц</a>
+              <a class="nav-link" href="#">
+                Оферта для корпоративных <br />
+                клиентов</a
+              >
+              <a class="nav-link" href="#">
+                Оферта для партнеров <br />(ритейлеров)</a
+              >
+              <a class="nav-link" href="#">Контакты</a>
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Корпоративным клиентам</h4>
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              <a class="nav-link" href="#"> Корпоративным клиентам</a>
+              <a class="nav-link" href="#"> Электронные подарочные карты</a>
+              <a class="nav-link" href="#">
+                Универсальная подарочная карта Giftery Card</a
+              >
+              <a class="nav-link" href="#">Подарочные карты магазинов</a>
+              <a class="nav-link" href="#">Банковские подарочные карты</a>
+              <a class="nav-link" href="#">Топливные подарочные карты</a>
+              <a class="nav-link" href="#">Карты оплаты мобильной связи</a>
+              <a class="nav-link" href="#">Кейсы клиентов Giftery</a>
+              <a class="nav-link" href="#">
+                Видеоуроки по автоматизации <br />программ мотивациии</a
+              >
+              <a class="nav-link" href="#"> API интеграция</a>
+              <a class="nav-link" href="#">
+                Виджет для продажи подарочных карт</a
+              >
+              <a class="nav-link" href="#">
+                Запустите новый канал продаж за 1 день</a
+              >
+              <a class="nav-link" href="#">Витрина вознаграждений</a>
+              <a class="nav-link" href="#">Личный кабинет для ритейлеров</a>
+              <a class="nav-link" href="#">
+                Личный кабинет для корпоративных клиентов</a
+              >
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Прочее</h4>
+              <a class="nav-link" href="#"> API интеграция</a>
+              <a class="nav-link" href="#">
+                Виджет для продажи подарочных карт</a
+              >
+              <a class="nav-link" href="#">
+                Запустите новый канал продаж за 1 день</a
+              >
+              <a class="nav-link" href="#">Витрина вознаграждений</a>
+              <a class="nav-link" href="#">Личный кабинет для ритейлеров</a>
+              <a class="nav-link" href="#">
+                Личный кабинет для корпоративных клиентов</a
+              >
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Контакты</h4>
+              <p>
+                Клиентская поддержка для физических лиц по вопросам покупки,
+                отправки, использования сертификатов
+              </p>
+              <a class="nav-link" href="#">8 800 551 46 19</a>
+              <a class="nav-link" href="#">+7 499 653 84 68</a>
+              <a class="nav-link" href="#">support@giftery.ru</a>
+              <p>Отдел продаж (для юридических лиц)</p>
+              <a class="nav-link" href="#">+7 499 444 32 57</a>
+              <a class="nav-link" href="#">b2b@giftery.ru</a>
+              <p>Отдел продаж (для юридических лиц)</p>
+              <a class="nav-link" href="#">+7 (499) 302 36 32</a>
+              <a class="nav-link" href="#">partners@giftery.ru</a>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/card-page.js"></script>
+  </body>
+</html>

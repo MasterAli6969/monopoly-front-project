@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="catalog.css" />
+    <title>Catalog</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav>
+        <!--------------------- ХЕДЕР ------------------->
+        <div class="bg-body-tertiary pt-3">
+          <div class="container d-flex justify-content-between flex-wrap">
+            <div>
+              <h1>Logo</h1>
+            </div>
+            <div
+              class="w-70 d-flex justify-content-around align-items-center m-3 flex-wrap"
+            >
+              <button type="button" class="btn btn-primary btn-lg rounded-5">
+                <a
+                  href="file:///home/ubuntu/monopoly-front-project/pages/user-profile.html"
+                  style="color: white; text-decoration: none"
+                  >Личный кабинет</a
+                >
+              </button>
+              <a
+                href="file:///home/ubuntu/monopoly-front-project/pages/shopping-empty-cart.html"
+                ><button
+                  type="button"
+                  class="btn btn-primary position-relative mx-3 rounded-5"
+                >
+                  <i class="bi bi-cart"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button></a
+              >
+              <div class="m-3">
+                <select
+                  class="form-select"
+                  id="floatingSelect"
+                  aria-label="Floating label select example"
+                >
+                  <option selected>Русский</option>
+                  <option value="1">Английский</option>
+                </select>
+              </div>
+
+              <h4 class="m-3">8 800 55 35 35</h4>
+            </div>
+          </div>
+          <div class="container my-3">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid d-flex justify-content-end">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse align-items-center"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Купить подарочную карту
+                      </a>
+
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                            >Все</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Сидим дома</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Хобби и досуг</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Электроника</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Косметика</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Салоны красоты</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Компьютерные программы</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Детские товары</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Ювелирные украшения</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Игры</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Зоотовары</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Услуги</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Авто</a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">Экотовары</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Подарки</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Аксессуары</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Книги</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Одежда и обувь</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Товары для дома</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Развлечения</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Образование</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Спорт</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Рестораны</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Еда и напитки</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Благотворительность</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Продукты</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Путешествия</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Корпоративным клиентам
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Корпоративным клиентам</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Электронные подарочные карты</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Универсальная подарочная карта</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Giftery Card</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Giftery Card с дополненной реальностью</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Подарочные карты магазинов</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Банковские подарочные карты</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Топливные подарочные карты</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Карты оплаты мобильной связи</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">API интеграция</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Витрина вознаграждений</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Личный кабинет</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Для корпоративных клиентов</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Акции и скидки</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Кейсы клиентов Giftery</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Отзывы B2B-клиентов</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Видеоуроки по автоматизации</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >программ мотивациии</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Ритейлерам
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Виджет для продажи <br />подарочных карт</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Запустите новый канал<br />
+                            продаж за 1 день</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        О компании
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">О Giftery</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Пресса о нас</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Новости</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Бонусная программа</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Карьера в Giftery</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >О деятельности ИТ-компании ООО «ГИФТЕРИ»</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >О деятельности ИТ-компании ООО «ГИФТЕРИ.РУ»</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Оферты</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Для физ. лиц</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Для корпоративных клиентов</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Для партнеров (ритейлеров)</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Обменять Giftery Card</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5">
+            <!--------------------- Хлебные крошки и загаловок ------------------->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a
+                    href="file:///home/ubuntu/monopoly-front-project/index.html"
+                    >Главная
+                  </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Подарочные сертификаты и карты
+                </li>
+              </ol>
+            </nav>
+            <h3>Подарочные сертификаты и карты</h3>
+          </div>
+          <div class="col-md-3 col-sm-12 mb-5">
+            <!--------------------- Левый SIDEBAR ------------------->
+            <form class="d-flex mb-3">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Поиск"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <div class="dropdown mb-3">
+              <button
+                class="btn btn-primary btn-lg dropdown-toggle rounded-5 w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Все подарочные карты
+              </button>
+              <ul class="dropdown-menu dropdown-menu__height">
+                <li>
+                  <a class="dropdown-item" href="#">Все подарочные карты</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Акции и скидки</a></li>
+                <li><a class="dropdown-item" href="#">Сидим дома</a></li>
+                <li><a class="dropdown-item" href="#">Подписки</a></li>
+                <li><a class="dropdown-item" href="#">Хобби и досуг</a></li>
+                <li><a class="dropdown-item" href="#">Электроника</a></li>
+                <li><a class="dropdown-item" href="#">Косметика</a></li>
+                <li><a class="dropdown-item" href="#">Салоны красоты</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Компьютерные программы</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Здоровье</a></li>
+                <li><a class="dropdown-item" href="#">Детские товары</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Ювелирные украшения</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Игры</a></li>
+                <li><a class="dropdown-item" href="#">Зоотовары</a></li>
+                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                <li><a class="dropdown-item" href="#">Авто</a></li>
+                <li><a class="dropdown-item" href="#">Экотовары</a></li>
+                <li><a class="dropdown-item" href="#">Подарки</a></li>
+                <li><a class="dropdown-item" href="#">Аксессуары</a></li>
+                <li><a class="dropdown-item" href="#">Книги</a></li>
+                <li><a class="dropdown-item" href="#">Одежда и обувь</a></li>
+                <li><a class="dropdown-item" href="#">Товары для дома</a></li>
+                <li><a class="dropdown-item" href="#">Развлечения</a></li>
+                <li><a class="dropdown-item" href="#">Образование</a></li>
+                <li><a class="dropdown-item" href="#">Спорт</a></li>
+                <li><a class="dropdown-item" href="#">Рестораны</a></li>
+                <li><a class="dropdown-item" href="#">Еда и напитки</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Благотворительность</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Продукты</a></li>
+                <li><a class="dropdown-item" href="#">Путешествия</a></li>
+              </ul>
+            </div>
+            <div class="dropdown mb-3">
+              <button
+                class="btn btn-primary btn-lg dropdown-toggle rounded-5 w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Коллеге
+              </button>
+              <ul class="dropdown-menu dropdown-menu__height">
+                <li><a class="dropdown-item" href="#">Коллеге</a></li>
+                <li><a class="dropdown-item" href="#">Сотруднику</a></li>
+                <li><a class="dropdown-item" href="#">Клиенту</a></li>
+                <li><a class="dropdown-item" href="#">Партнеру</a></li>
+                <li><a class="dropdown-item" href="#">Вендору</a></li>
+                <li><a class="dropdown-item" href="#">Бабушке</a></li>
+                <li><a class="dropdown-item" href="#">Дедушке</a></li>
+                <li><a class="dropdown-item" href="#">Маме</a></li>
+                <li><a class="dropdown-item" href="#">Папе</a></li>
+                <li><a class="dropdown-item" href="#">Ребенку</a></li>
+                <li><a class="dropdown-item" href="#">Сыну</a></li>
+                <li><a class="dropdown-item" href="#">Дочери</a></li>
+                <li><a class="dropdown-item" href="#">Брату</a></li>
+                <li><a class="dropdown-item" href="#">Сестре</a></li>
+                <li><a class="dropdown-item" href="#">Невесте</a></li>
+                <li><a class="dropdown-item" href="#">Жениху</a></li>
+                <li><a class="dropdown-item" href="#">Другу</a></li>
+                <li><a class="dropdown-item" href="#">Молодому человеку</a></li>
+                <li><a class="dropdown-item" href="#">Девочке</a></li>
+                <li><a class="dropdown-item" href="#">Женщине</a></li>
+                <li><a class="dropdown-item" href="#">Мужчине</a></li>
+                <li><a class="dropdown-item" href="#">Дяде</a></li>
+                <li><a class="dropdown-item" href="#">Тете</a></li>
+                <li><a class="dropdown-item" href="#">Спортсмену</a></li>
+                <li><a class="dropdown-item" href="#">Школьнику</a></li>
+                <li><a class="dropdown-item" href="#">Студенту</a></li>
+                <li><a class="dropdown-item" href="#">Выпускнику</a></li>
+                <li><a class="dropdown-item" href="#">Старшекласнику</a></li>
+                <li><a class="dropdown-item" href="#">Крестному</a></li>
+                <li><a class="dropdown-item" href="#">Крестной</a></li>
+              </ul>
+            </div>
+            <div class="dropdown mb-3">
+              <button
+                class="btn btn-primary btn-lg dropdown-toggle rounded-5 w-100"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Повод
+              </button>
+              <ul class="dropdown-menu dropdown-menu__height">
+                <li><a class="dropdown-item" href="#">23 февраля</a></li>
+                <li><a class="dropdown-item" href="#">8 марта</a></li>
+                <li><a class="dropdown-item" href="#">14 февраля</a></li>
+                <li><a class="dropdown-item" href="#">День рождения</a></li>
+                <li><a class="dropdown-item" href="#">Свадьба</a></li>
+                <li><a class="dropdown-item" href="#">Новый год</a></li>
+                <li><a class="dropdown-item" href="#">Юбилей</a></li>
+                <li><a class="dropdown-item" href="#">Корпоратив</a></li>
+                <li><a class="dropdown-item" href="#">1 сентября</a></li>
+                <li><a class="dropdown-item" href="#">Рождество</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">День защитника Отечества</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Международный женский день</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">День Победы</a></li>
+                <li><a class="dropdown-item" href="#">День России</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">День народного единства</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Старый Новый год</a></li>
+                <li><a class="dropdown-item" href="#">Татьянин день</a></li>
+                <li><a class="dropdown-item" href="#">Молодому человеку</a></li>
+                <li><a class="dropdown-item" href="#">Крестины</a></li>
+                <li><a class="dropdown-item" href="#">Крещение</a></li>
+                <li><a class="dropdown-item" href="#">Хэллуин</a></li>
+                <li><a class="dropdown-item" href="#">Пасху</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Новогодние каникулы</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Выпускной</a></li>
+                <li><a class="dropdown-item" href="#">Именины</a></li>
+                <li><a class="dropdown-item" href="#">День ангела</a></li>
+                <li><a class="dropdown-item" href="#">День матери</a></li>
+                <li><a class="dropdown-item" href="#">День защиты детей</a></li>
+                <li><a class="dropdown-item" href="#">Выход на пенсию</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-12 mb-5">
+            <!--------------------- Карточки товаров ------------------->
+            <div class="container d-flex justify-content-center flex-wrap">
+              <div class="card" style="width: 18rem; margin: 10px">
+                <div
+                  class="card-body d-flex flex-column align-items-start justify-content-between"
+                >
+                  <div>
+                    <img
+                      src="../img/lorem-inage-default1.jpg"
+                      class="img-thumbnail"
+                    />
+                    <h5 class="card-title mb-5">
+                      Подписка на онлайн-кинотеатр PREMIER
+                    </h5>
+                  </div>
+                  <div>
+                    <p class="card-text">Номинал</p>
+                    <h5 class="card-text">От 149 до 799</h5>
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn btn-primary w-100 rounded-5"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal6"
+                    >
+                      Купить
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal6"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                              Modal title
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div
+                              class="d-flex justify-content-between flex-wrap mb-5"
+                            >
+                              <img
+                                src="../img/lorem-inage-default1.jpg"
+                                class="img-thumbnail custom_index_block3_card_modal_img"
+                              />
+                              <div
+                                class="px-2 custom_index_block3_card_modal_description"
+                              >
+                                <h4 class="mb-3">Giftery Card</h4>
+                                <p>
+                                  Дарите только нужные подарки. Получатель
+                                  сможет обменять Giftery Card на подарочные
+                                  карты известных брендов из списка обмена
+                                  (ссылка на список обмена расположена в разделе
+                                  "Правила", пункт 2).
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-around flex-wrap mb-5"
+                            >
+                              <a
+                                href="file:///home/ubuntu/monopoly-front-project/pages/card-page.html"
+                                ><button
+                                  type="button"
+                                  class="btn btn-secondary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Отправить себе
+                                </button></a
+                              >
+
+                              <a
+                                href="file:///home/ubuntu/monopoly-front-project/pages/card-page.html"
+                                ><button
+                                  type="button"
+                                  class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                                >
+                                  Отправить в подарок
+                                </button></a
+                              >
+                            </div>
+                            <div
+                              class="container-fluid d-flex justify-content-around flex-wrap mb-5 bg-primary p-3"
+                            >
+                              <div
+                                class="card d-flex flex-column align-items-center rounded-3"
+                                style="width: 18rem"
+                              >
+                                <i class="bi bi-mailbox-flag fs-1"></i>
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    Обменяйте Giftery Card в рамках номинала на
+                                    один или несколько сертификатов из каталога
+                                    Giftery
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="card d-flex flex-column align-items-center rounded-3"
+                                style="width: 18rem"
+                              >
+                                <i class="bi bi-mailbox-flag fs-1"></i>
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    Обменяйте Giftery Card в рамках номинала на
+                                    один или несколько сертификатов из каталога
+                                    Giftery
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-around flex-wrap"
+                            >
+                              <div
+                                class="px-2 custom_index_block3_card_modal_description"
+                              >
+                                <h4 class="mb-3 fw-bolder">
+                                  Корпоративный заказ
+                                </h4>
+                                <p>Закажите подарочные карты оптом.</p>
+                              </div>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                              >
+                                Оставить заявку
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-5 d-flex justify-content-center">
+            <!--------------------- Пагинация ------------------->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <hr />
+          <div class="col-12 mb-5">
+            <!--------------------- Прочие описания ------------------->
+            <p class="mb-5">
+              Купить электронные подарочные сертификаты магазинов — отличная
+              идея для подарка, когда нет времени или возможности ходить и
+              выбирать презент по офлайн магазинам, опасаетесь не угодить
+              вкусовым предпочтениям получателя, нужно заказать большое
+              количество подарков для сотрудников, клиентов, бизнес партнеров и
+              пр.
+            </p>
+            <h4 class="fw-bolder mb-3">
+              Продажа подарочных сертификатов: товары, услуги,
+              благотворительность
+            </h4>
+            <p class="mb-5">
+              Наш каталог подарочных сертификатов включает десятки карт
+              магазинов, развлекательных центров, спортивных залов, салонов
+              красоты. Мы предлагаем выгодно и удобно купить подарочные карты
+              онлайн :
+            </p>
+            <ul class="mb-4">
+              <li>На квесты для детей и взрослых в QuestReality.</li>
+              <li>На покупки в супермаркете «Перекресток».</li>
+              <li>На заказы в сервисе Яндекс.Еда и мн. др.</li>
+            </ul>
+            <p class="mb-5">
+              У нас найдется решение даже если вы совершенно не знаете что
+              дарить! Мы предлагаем универсальные электронные карты Giftery
+              Card, которые можно обменять на сертификаты аналогичного номинала
+              наших партнеров.
+            </p>
+            <h4 class="fw-bolder mb-3">Купить подарочные карты онлайн</h4>
+            <p class="mb-5">
+              Мы осуществляем продажу подарочных сертификатов с гарантией
+              мгновенной доставки на email. Оформление заказов доступно для
+              частных и юридических лиц. Для корпоративных клиентов мы с
+              радостью подготовим подарочные сертификаты с дизайном,
+              соответствующим фирменному стилю компании. Возможен выпуск карт в
+              пластике. Подробнее о корпоративных подарках здесь.
+            </p>
+            <p class="mb-5">
+              Устали дарить и получать бесполезные презенты? Станьте основателем
+              хорошей традиции дарить приятные и нужные подарки с сервисом
+              продажи электронных подарочных карт «Giftery»!
+            </p>
+            <ul class="d-flex flex-wrap p-0" style="list-style: none">
+              <li class="m-1">
+                <button type="button" class="btn btn-outline-primary">
+                  Хабаровск
+                </button>
+              </li>
+              <li class="m-1">
+                <button type="button" class="btn btn-outline-primary">
+                  Казань
+                </button>
+              </li>
+              <li class="m-1">
+                <button type="button" class="btn btn-outline-primary">
+                  Тверь
+                </button>
+              </li>
+              <li class="m-1">
+                <button type="button" class="btn btn-outline-primary">
+                  Воронеж
+                </button>
+              </li>
+              <li class="m-1">
+                <button type="button" class="btn btn-outline-primary">
+                  Пермь
+                </button>
+              </li>
+              <li class="m-1">
+                <button type="button" class="btn btn-outline-primary">
+                  Кемерово
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 pt-5 pb-5" style="background-color: #0b132a">
+        <!--------------------- БЛОК ФУТТЕР ------------------->
+        <footer class="container">
+          <div style="color: white">
+            <h1 class="logo">LOGO</h1>
+          </div>
+          <div class="d-flex flex-wrap">
+            <nav class="nav flex-column" style="color: white">
+              <h4>Подарочные карты</h4>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                >Каталог</a
+              >
+              <a
+                class="nav-link"
+                href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                >Благотворительность</a
+              >
+              <a class="nav-link" href="#">Активация карт сотовой связи</a>
+              <a class="nav-link" href="#">Обменять Giftery Card</a>
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>О компании</h4>
+              <a class="nav-link active" aria-current="page" href="#"
+                >О Giftery</a
+              >
+              <a class="nav-link" href="#">Пресса о нас</a>
+              <a class="nav-link" href="#">Новости</a>
+              <a class="nav-link" href="#">Бонусная программа</a>
+              <a class="nav-link" href="#">Карьера в Giftery</a>
+              <a class="nav-link" href="#">
+                О деятельности ИТ-компании <br />
+                ООО «ГИФТЕРИ»</a
+              >
+              <a class="nav-link" href="#">
+                О деятельности ИТ-компании<br />
+                ООО «ГИФТЕРИ.РУ»</a
+              >
+              <a class="nav-link" href="#">Оферта для физ. лиц</a>
+              <a class="nav-link" href="#">
+                Оферта для корпоративных <br />
+                клиентов</a
+              >
+              <a class="nav-link" href="#">
+                Оферта для партнеров <br />(ритейлеров)</a
+              >
+              <a class="nav-link" href="#">Контакты</a>
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Корпоративным клиентам</h4>
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              <a class="nav-link" href="#"> Корпоративным клиентам</a>
+              <a class="nav-link" href="#"> Электронные подарочные карты</a>
+              <a class="nav-link" href="#">
+                Универсальная подарочная карта Giftery Card</a
+              >
+              <a class="nav-link" href="#">Подарочные карты магазинов</a>
+              <a class="nav-link" href="#">Банковские подарочные карты</a>
+              <a class="nav-link" href="#">Топливные подарочные карты</a>
+              <a class="nav-link" href="#">Карты оплаты мобильной связи</a>
+              <a class="nav-link" href="#">Кейсы клиентов Giftery</a>
+              <a class="nav-link" href="#">
+                Видеоуроки по автоматизации <br />программ мотивациии</a
+              >
+              <a class="nav-link" href="#"> API интеграция</a>
+              <a class="nav-link" href="#">
+                Виджет для продажи подарочных карт</a
+              >
+              <a class="nav-link" href="#">
+                Запустите новый канал продаж за 1 день</a
+              >
+              <a class="nav-link" href="#">Витрина вознаграждений</a>
+              <a class="nav-link" href="#">Личный кабинет для ритейлеров</a>
+              <a class="nav-link" href="#">
+                Личный кабинет для корпоративных клиентов</a
+              >
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Прочее</h4>
+              <a class="nav-link" href="#"> API интеграция</a>
+              <a class="nav-link" href="#">
+                Виджет для продажи подарочных карт</a
+              >
+              <a class="nav-link" href="#">
+                Запустите новый канал продаж за 1 день</a
+              >
+              <a class="nav-link" href="#">Витрина вознаграждений</a>
+              <a class="nav-link" href="#">Личный кабинет для ритейлеров</a>
+              <a class="nav-link" href="#">
+                Личный кабинет для корпоративных клиентов</a
+              >
+            </nav>
+            <nav class="nav flex-column" style="color: white">
+              <h4>Контакты</h4>
+              <p>
+                Клиентская поддержка для физических лиц по вопросам покупки,
+                отправки, использования сертификатов
+              </p>
+              <a class="nav-link" href="#">8 800 551 46 19</a>
+              <a class="nav-link" href="#">+7 499 653 84 68</a>
+              <a class="nav-link" href="#">support@giftery.ru</a>
+              <p>Отдел продаж (для юридических лиц)</p>
+              <a class="nav-link" href="#">+7 499 444 32 57</a>
+              <a class="nav-link" href="#">b2b@giftery.ru</a>
+              <p>Отдел продаж (для юридических лиц)</p>
+              <a class="nav-link" href="#">+7 (499) 302 36 32</a>
+              <a class="nav-link" href="#">partners@giftery.ru</a>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="../../UI-components/script.js"></script>
+  </body>
+</html>
