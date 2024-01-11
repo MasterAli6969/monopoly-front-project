@@ -29,12 +29,34 @@ cardPage.forEach((card) => {
 
 // блок кода для счётчика на карзину, ограничитель на однокротное добавление
 
-const buttonAddCart = document.querySelector("._buttonAddCart");
-const cartIconNumber = document.querySelector("#_cartIconNumber");
-buttonAddCart.addEventListener("click", () => {
-  let parsNumCartIconNumber = parseInt(cartIconNumber.innerText);
-  if (parsNumCartIconNumber < 1) {
-    parsNumCartIconNumber++;
-    cartIconNumber.innerText = parsNumCartIconNumber;
-  }
-});
+const buttonAddCart = document
+  .querySelector("._buttonAddCart")
+  .addEventListener("click", () => {
+    const cartIconNumber = document.querySelector("#cartIconNumber");
+    let parsNumCartIconNumber = parseInt(cartIconNumber.innerText);
+    if (parsNumCartIconNumber < 1) {
+      parsNumCartIconNumber++;
+      cartIconNumber.innerText = parsNumCartIconNumber;
+    }
+  });
+
+// блок кода для трех якорных кнопок ведущих на аккардионы и их автоматическое открытие
+
+const anchorButton = document
+  .querySelectorAll("._anchorButton")
+  .forEach((button) => {
+    button.addEventListener("click", () => {
+      const targetId = button.getAttribute("data-target");
+      const targetSelector = button.getAttribute("data-bs-target");
+      const accordionItem = document.getElementById(targetId);
+      const targetCollapse = document.querySelector(targetSelector);
+      if (accordionItem && targetCollapse) {
+        accordionItem.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+        const bsCollapse = new bootstrap.Collapse(targetCollapse);
+        bsCollapse.toggle();
+      }
+    });
+  });

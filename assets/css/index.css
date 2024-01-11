@@ -12,18 +12,6 @@
   margin: 10px;
 }
 
-.custom_index_block3_card_modal_img {
-  width: 300px;
-  height: 130px;
-}
-.custom_index_block3_card_modal_description {
-  max-width: 400px;
-}
-
-.custom_index_block3_card_modal_buttons {
-  width: 250px;
-}
-
 .custom_index_block6_card_body:hover {
   background-color: #0b5ed7;
 }

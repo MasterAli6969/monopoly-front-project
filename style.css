@@ -2,6 +2,20 @@ body {
   background-color: #f9fafb;
 }
 
+/*  ЭТО СТИЛИ ДЛЯ КОРРЕКТНОЙ РАБОТЫ КОНТЕНТА МОДАЛЬНЫХ ОКОН НА ВСЕХ СТРАНИЦАХ */
+.modal-body__image-size {
+  width: 300px;
+  height: 130px;
+}
+
+.modal-body__description-size {
+  max-width: 400px;
+}
+
+.modal-body__button-size {
+  width: 250px;
+}
+
 /*  ЭТО СТИЛИ ДЛЯ КОРРЕКТНОЙ РАБОТЫ ХЕДЕРА, ПОКА ВЫНЕЧЕНЫ ГЛОБАЛЬНО */
 @media (max-width: 991.98px) {
   .nav-menu__logo-mobile {
