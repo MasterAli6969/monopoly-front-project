@@ -12,76 +12,97 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="catalog.css" />
     <title>Catalog</title>
   </head>
   <body>
+    <div
+      class="w-100 d-flex justify-content-center align-items-center"
+      style="position: fixed; background-color: red; z-index: 999"
+    >
+      <h5 style="color: white">COMING SOON. Сайт в разработке.</h5>
+    </div>
     <div class="container-fluid">
       <nav>
         <!--------------------- ХЕДЕР ------------------->
-        <div class="bg-body-tertiary pt-3">
-          <div class="container d-flex justify-content-between flex-wrap">
-            <div>
-              <h1>Logo</h1>
-            </div>
-            <div
-              class="w-70 d-flex justify-content-around align-items-center m-3 flex-wrap"
-            >
-              <button type="button" class="btn btn-primary btn-lg rounded-5">
-                <a
-                  href="file:///home/ubuntu/monopoly-front-project/pages/user-profile.html"
-                  style="color: white; text-decoration: none"
-                  >Личный кабинет</a
-                >
-              </button>
-              <a
-                href="file:///home/ubuntu/monopoly-front-project/pages/shopping-empty-cart.html"
-                ><button
-                  type="button"
-                  class="btn btn-primary position-relative mx-3 rounded-5"
-                >
-                  <i class="bi bi-cart"></i>
-                  <span
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                  >
-                    99+
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </button></a
-              >
-              <div class="m-3">
-                <select
-                  class="form-select"
-                  id="floatingSelect"
-                  aria-label="Floating label select example"
-                >
-                  <option selected>Русский</option>
-                  <option value="1">Английский</option>
-                </select>
-              </div>
-
-              <h4 class="m-3">8 800 55 35 35</h4>
-            </div>
-          </div>
-          <div class="container my-3">
+        <div class="bg-body-tertiary pt-5">
+          <div class="container">
             <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid d-flex justify-content-end">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+              <div class="container px-0 d-block">
                 <div
-                  class="collapse navbar-collapse align-items-center"
+                  class="d-flex justify-content-between align-items-center w-100"
+                >
+                  <div class="d-none nav-menu__logo-mobile">
+                    <h1>Logo</h1>
+                  </div>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+
+                <div
+                  class="collapse navbar-collapse flex-column align-items-start py-3"
                   id="navbarNavDropdown"
                 >
-                  <ul class="navbar-nav">
+                  <div class="d-flex flex-wrap justify-content-between w-100">
+                    <div
+                      class="d-flex align-items-center nav-menu__logo-desktop"
+                    >
+                      <a href="index.html"><h1>Logo</h1></a>
+                    </div>
+                    <div
+                      class="d-flex align-items-center flex-wrap navbar-collapse__menu-item"
+                    >
+                      <a href="pages/user-profile.html"
+                        ><button
+                          type="button"
+                          class="btn btn-primary rounded-5"
+                        >
+                          Личный кабинет
+                        </button></a
+                      >
+
+                      <a href="pages/shopping-full-cart.html">
+                        <button
+                          type="button"
+                          class="btn btn-primary position-relative m-3 rounded-5"
+                        >
+                          <i class="bi bi-cart"></i>
+                          <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                          >
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </button>
+                      </a>
+                      <div class="">
+                        <select
+                          class="form-select"
+                          id="floatingSelect"
+                          aria-label="Floating label select example"
+                        >
+                          <option selected>Русский</option>
+                          <option value="1">Английский</option>
+                        </select>
+                      </div>
+                      <div
+                        class="w-70 d-flex justify-content-around align-items-center m-3 flex-wrap"
+                      >
+                        <h4 class="gog">8 800 55 35 35</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="navbar-nav py-3">
                     <li class="nav-item dropdown">
                       <a
                         class="nav-link dropdown-toggle"
@@ -97,7 +118,7 @@
                         <li>
                           <a
                             class="dropdown-item"
-                            href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                            href="pages/catalog-page.html"
                             >Все</a
                           >
                         </li>
@@ -385,7 +406,7 @@
       </nav>
       <div class="container">
         <div class="row">
-          <div class="col-12 mb-5">
+          <div class="col-12 mb-5 pt-3">
             <!--------------------- Хлебные крошки и загаловок ------------------->
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -402,7 +423,7 @@
             </nav>
             <h3>Подарочные сертификаты и карты</h3>
           </div>
-          <div class="col-md-3 col-sm-12 mb-5">
+          <div class="col-md-3 col-sm-12 mb-5 p-0">
             <!--------------------- Левый SIDEBAR ------------------->
             <form class="d-flex mb-3">
               <input
@@ -422,7 +443,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Все подарочные карты
+                Подарочные карты
               </button>
               <ul class="dropdown-menu dropdown-menu__height">
                 <li>

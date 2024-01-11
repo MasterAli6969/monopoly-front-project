@@ -1,0 +1,16 @@
+body {
+  background-color: #f9fafb;
+}
+
+/*  ЭТО СТИЛИ ДЛЯ КОРРЕКТНОЙ РАБОТЫ ХЕДЕРА, ПОКА ВЫНЕЧЕНЫ ГЛОБАЛЬНО */
+@media (max-width: 991.98px) {
+  .nav-menu__logo-mobile {
+    display: flex !important;
+  }
+  .nav-menu__logo-desktop {
+    display: none !important;
+  }
+  .navbar-collapse__menu-item {
+    display: block !important;
+  }
+}
