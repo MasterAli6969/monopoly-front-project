@@ -24,10 +24,10 @@
     >
       <h5 style="color: white">COMING SOON. Сайт в разработке.</h5>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <nav>
         <!--------------------- ХЕДЕР ------------------->
-        <div class="bg-white shadow-lg">
+        <div class="shadow-lg">
           <div class="container">
             <nav class="navbar navbar-expand-lg">
               <div class="container px-0 d-block">
@@ -35,7 +35,7 @@
                   class="d-flex justify-content-between align-items-center w-100"
                 >
                   <div class="d-none nav-menu__logo-mobile">
-                    <h1>Logo</h1>
+                    <a href="index.html" class="title-colors"><h1>Logo</h1></a>
                   </div>
                   <button
                     class="navbar-toggler"
@@ -58,33 +58,30 @@
                     <div
                       class="d-flex align-items-center nav-menu__logo-desktop"
                     >
-                      <a href="index.html"><h1>Logo</h1></a>
+                      <a href="index.html" class="title-colors"
+                        ><h1>Logo</h1></a
+                      >
                     </div>
                     <div
                       class="d-flex align-items-center flex-wrap navbar-collapse__menu-item"
                     >
-                      <a href="pages/user-profile.html"
-                        ><button
-                          type="button"
-                          class="btn btn-primary rounded-5"
-                        >
-                          Личный кабинет
-                        </button></a
+                      <a
+                        href="pages/user-profile.html"
+                        class="btn btn-light rounded-5 accent-colors"
+                        >Личный кабинет</a
                       >
 
-                      <a href="pages/shopping-full-cart.html">
-                        <button
-                          type="button"
-                          class="btn btn-primary position-relative m-3 rounded-5"
+                      <a
+                        href="pages/shopping-full-cart.html"
+                        class="btn btn-light position-relative m-3 rounded-5 accent-colors"
+                      >
+                        <i class="bi bi-cart"></i>
+                        <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                         >
-                          <i class="bi bi-cart"></i>
-                          <span
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                          >
-                            0
-                            <span class="visually-hidden">unread messages</span>
-                          </span>
-                        </button>
+                          0
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
                       </a>
                       <div class="">
                         <select
@@ -408,9 +405,9 @@
       <div class="row">
         <div class="col-12">
           <!--------------------- БЛОК - 1 Подарочные------------------->
-          <div class="py-5" style="background-color: gray">
+          <div class="py-5" style="background-color: #f7f4ef">
             <div class="container py-5">
-              <h1 class="font-weight-bold text-center mb-5">
+              <h1 class="font-weight-bold text-center mb-5 title-colors">
                 Подарочные сертификаты известных брендов с моментальной
                 доставкой на электронную почту для:
               </h1>
@@ -420,14 +417,14 @@
                 <div
                   class="text-center d-flex flex-column align-items-center mx-5"
                 >
-                  <i class="bi bi-gift fs-1"></i>
-                  <p>Подарков друзьям</p>
+                  <i class="bi bi-gift fs-1 title-colors"></i>
+                  <p class="text-main-colors">Подарков друзьям</p>
                 </div>
                 <div
                   class="text-center d-flex flex-column align-items-center mx-5"
                 >
-                  <i class="bi bi-eyeglasses fs-1"></i>
-                  <p>
+                  <i class="bi bi-eyeglasses fs-1 title-colors"></i>
+                  <p class="text-main-colors">
                     Программ мотивации <br />
                     сотрудников
                   </p>
@@ -436,8 +433,8 @@
                 <div
                   class="text-center d-flex flex-column align-items-center mx-5"
                 >
-                  <i class="bi bi-emoji-laughing fs-1"></i>
-                  <p>
+                  <i class="bi bi-emoji-laughing fs-1 title-colors"></i>
+                  <p class="text-main-colors">
                     Программ клиентской <br />
                     лояльности
                   </p>
@@ -445,36 +442,32 @@
                 <div
                   class="text-center d-flex flex-column align-items-center mx-5"
                 >
-                  <i class="bi bi-megaphone fs-1"></i>
-                  <p>Промо-акций</p>
+                  <i class="bi bi-megaphone fs-1 title-colors"></i>
+                  <p class="text-main-colors">Промо-акций</p>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-center">
-                <a href="pages/catalog-page.html">
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-lg rounded-5 m-3"
-                  >
-                    Купить подарочную карту
-                  </button></a
+                <a
+                  href="pages/catalog-page.html"
+                  class="btn btn-light btn-lg rounded-5 m-3 over-accent-color text-accent-colors"
                 >
+                  Купить подарочную карту
+                </a>
               </div>
               <div
                 class="d-flex align-items-center justify-content-center flex-wrap"
               >
-                <button
-                  type="button"
-                  class="btn btn-secondary rounded-5 btn-lg m-3"
+                <a
+                  href="#"
+                  class="btn btn-light rounded-5 btn-lg m-3 accent-colors text-accent-colors"
                 >
                   Корпоративным клиентам
-                </button>
-
-                <button
-                  type="button"
-                  class="btn btn-secondary rounded-5 btn-lg m-3"
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-light rounded-5 btn-lg m-3 accent-colors text-accent-colors"
+                  >Ритейлерам</a
                 >
-                  Ритейлерам
-                </button>
               </div>
             </div>
           </div>
@@ -506,11 +499,7 @@
               ></button>
             </div>
             <div class="carousel-inner">
-              <div
-                class="carousel-item active py-5"
-                data-bs-interval="10000"
-                style="background-color: white"
-              >
+              <div class="carousel-item active py-5" data-bs-interval="10000">
                 <div
                   class="container d-flex justify-content-center flex-wrap py-5"
                 >
@@ -521,78 +510,76 @@
                     />
                   </div>
                   <div class="mx-5" style="width: 500px; height: 300px">
-                    <h1>Подарки к Новому году с Giftery!</h1>
-                    <p>
+                    <h1 class="title-colors">
+                      Подарки к Новому году с Giftery!
+                    </h1>
+                    <p class="text-main-colors">
                       В период с 1 по 28 декабря у вас есть возможность
                       приобрести подарочные сертификаты от наших партнеров со
                       скидками до 70% для ваших близких, друзей и коллег.
                     </p>
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-lg rounded-5 mt-2"
+                    <a
+                      href="#"
+                      class="btn btn-light btn-lg rounded-5 mt-2 accent-colors text-accent-colors"
                     >
                       Узнать подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div
-                class="carousel-item py-5"
-                data-bs-interval="10000"
-                style="background-color: white"
-              >
+              <div class="carousel-item py-5" data-bs-interval="10000">
                 <div
                   class="container d-flex justify-content-center flex-wrap py-5"
                 >
                   <div style="max-width: 500px">
                     <img
-                      src="./img/slider-test-img.png"
+                      src="./img/lorem-inage-default1.jpg"
                       class="img-thumbnail"
                     />
                   </div>
                   <div class="mx-5" style="width: 500px; height: 300px">
-                    <h1>Подарки к Новому году с Giftery!</h1>
-                    <p>
+                    <h1 class="title-colors">
+                      Подарки к Новому году с Giftery!
+                    </h1>
+                    <p class="text-main-colors">
                       В период с 1 по 28 декабря у вас есть возможность
                       приобрести подарочные сертификаты от наших партнеров со
                       скидками до 70% для ваших близких, друзей и коллег.
                     </p>
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-lg rounded-5 mt-2"
+                    <a
+                      href="#"
+                      class="btn btn-light btn-lg rounded-5 mt-2 accent-colors text-accent-colors"
                     >
                       Узнать подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div
-                class="carousel-item py-5"
-                data-bs-interval="10000"
-                style="background-color: white"
-              >
+              <div class="carousel-item py-5" data-bs-interval="10000">
                 <div
                   class="container d-flex justify-content-center flex-wrap py-5"
                 >
                   <div style="max-width: 500px">
                     <img
-                      src="./img/slider-test-img.png"
+                      src="./img/lorem-inage-default2.jpg"
                       class="img-thumbnail"
                     />
                   </div>
                   <div class="mx-5" style="width: 500px; height: 300px">
-                    <h1>Подарки к Новому году с Giftery!</h1>
-                    <p>
+                    <h1 class="title-colors">
+                      Подарки к Новому году с Giftery!
+                    </h1>
+                    <p class="text-main-colors">
                       В период с 1 по 28 декабря у вас есть возможность
                       приобрести подарочные сертификаты от наших партнеров со
                       скидками до 70% для ваших близких, друзей и коллег.
                     </p>
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-lg rounded-5 mt-2"
+                    <a
+                      href="#"
+                      class="btn btn-light btn-lg rounded-5 mt-2 accent-colors text-accent-colors"
                     >
                       Узнать подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -631,14 +618,17 @@
               <div
                 class="card-body d-flex flex-column align-items-center custom_index_block3_card_body"
               >
-                <i class="bi bi-question-lg mb-2" style="font-size: 50px"></i>
-                <p class="card-text text-center">
+                <i
+                  class="bi bi-question-lg mb-2 title-colors"
+                  style="font-size: 50px"
+                ></i>
+                <p class="card-text text-center text-main-colors">
                   Что такое электронные подарочные карты?
                 </p>
                 <div
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
-                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto"
+                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto title-colors"
                 >
                   <!-- Button trigger modal -->
                   <p class="card-link custom_index_block3_card_link my-0 mx-3">
@@ -658,7 +648,10 @@
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        <h1
+                          class="modal-title fs-5"
+                          id="exampleModalLabel title-colors"
+                        >
                           Что такое электронные подарочные карты?
                         </h1>
                         <button
@@ -669,12 +662,14 @@
                         ></button>
                       </div>
                       <div class="modal-body">
-                        <p>
+                        <p class="text-main-colors">
                           Электронные подарочные карты (или сертификаты) — это
                           удобный, быстрый и экологичный способ сделать подарок
                           родным и близким! И вот почему:
                         </p>
-                        <ul class="custom_index_block3_card_link_exampleModal">
+                        <ul
+                          class="custom_index_block3_card_link_exampleModal text-main-colors"
+                        >
                           <li>
                             мгновенная доставка по email: не нужно ходить по
                             магазинам и выбирать подарок, тратиться на упаковку
@@ -700,14 +695,17 @@
               <div
                 class="card-body d-flex flex-column align-items-center custom_index_block3_card_body"
               >
-                <i class="bi bi-envelope" style="font-size: 50px"></i>
-                <p class="card-text text-center">
+                <i
+                  class="bi bi-envelope title-colors"
+                  style="font-size: 50px"
+                ></i>
+                <p class="card-text text-center text-main-colors">
                   Как отправить электронную подарочную карту?
                 </p>
                 <div
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal1"
-                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto"
+                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto title-colors"
                 >
                   <!-- Button trigger modal -->
                   <p class="card-link custom_index_block3_card_link my-0 mx-3">
@@ -727,7 +725,10 @@
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        <h1
+                          class="modal-title fs-5 title-colors"
+                          id="exampleModalLabel"
+                        >
                           Как отправить электронную подарочную карту?
                         </h1>
                         <button
@@ -738,13 +739,15 @@
                         ></button>
                       </div>
                       <div class="modal-body">
-                        <h5 class="fw-bolder mb-5">
+                        <h5 class="fw-bolder mb-5 title-colors">
                           Как подарить одну или несколько карт друзьям?
                         </h5>
-                        <h5 class="mb-3">
+                        <h5 class="mb-3 title-colors">
                           Дарить электронные карты легко, быстро и приятно:
                         </h5>
-                        <ul class="custom_index_block3_card_link_exampleModal">
+                        <ul
+                          class="custom_index_block3_card_link_exampleModal text-main-colors"
+                        >
                           <li>
                             выберите бренд подарочной карты в каталоге Giftery
                           </li>
@@ -757,30 +760,32 @@
                           </li>
                           <li>оплатите подарок он-лайн</li>
                         </ul>
-                        <h5 class="mb-5">
+                        <h5 class="mb-5 title-colors">
                           Подарочный сертификат будет мгновенно доставлен на
                           email адресата!
                         </h5>
-                        <h5 class="fw-bolder mb-3">
+                        <h5 class="fw-bolder mb-3 title-colors">
                           Корпоративным клиентам — разные сценарии применения
                           электронных подарочных карт:
                         </h5>
-                        <ul class="custom_index_block3_card_link_exampleModal">
-                          <li>
+                        <ul
+                          class="custom_index_block3_card_link_exampleModal text-main-colors"
+                        >
+                          <li class="mb-5">
                             Экономьте на доставке корпоративных подарков. В
                             Личном кабинете доступна одновременная отправка
                             подарков по всей России и подробный отчет о
                             доставке.
                           </li>
-                          <li>
+                          <li class="mb-5">
                             Используйте подарочные карты для обмена накопленных
                             участниками баллов в Витрине мотивации
                           </li>
-                          <li>
+                          <li class="mb-5">
                             Расширьте каталог вознаграждений в Программах
                             лояльности с помощью Интеграции по API
                           </li>
-                          <li>оплатите подарок он-лайн</li>
+                          <li class="mb-5">оплатите подарок он-лайн</li>
                         </ul>
                       </div>
                     </div>
@@ -792,14 +797,17 @@
               <div
                 class="card-body d-flex flex-column align-items-center custom_index_block3_card_body"
               >
-                <i class="bi bi-person-check-fill" style="font-size: 50px"></i>
-                <p class="card-text text-center">
+                <i
+                  class="bi bi-person-check-fill title-colors"
+                  style="font-size: 50px"
+                ></i>
+                <p class="card-text text-center text-main-colors">
                   Как воспользоваться электронной подарочной картой?
                 </p>
                 <div
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal2"
-                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto"
+                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto title-colors"
                 >
                   <!-- Button trigger modal -->
                   <p class="card-link custom_index_block3_card_link my-0 mx-3">
@@ -819,7 +827,10 @@
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        <h1
+                          class="modal-title fs-5 title-colors"
+                          id="exampleModalLabel"
+                        >
                           Как воспользоваться электронной подарочной картой?
                         </h1>
                         <button
@@ -831,24 +842,24 @@
                       </div>
                       <div class="modal-body">
                         <ul>
-                          <li class="mb-3">
+                          <li class="mb-3 text-main-colors">
                             Получатель сможет воспользоваться полученной
                             электронной подарочной картой, предъявив ее в
                             магазине в распечатанном виде.
                           </li>
-                          <li class="mb-3">
+                          <li class="mb-3 text-main-colors">
                             Некоторые магазины принимают сертификат с экрана
                             мобильного устройства (необходимо читать условия
                             приема конкретного ритейлера, они будут описаны в
                             полученном подарочном сертификате).
                           </li>
-                          <li class="mb-3">
+                          <li class="mb-3 text-main-colors">
                             У некоторых брендов есть прием подарочных карт в их
                             он-лайн магазинах. Для этого нужно будет ввести
                             номер сертификата в специальное окошко на сайте
                             интернет магазина данного ритейлера.
                           </li>
-                          <li class="mb-3">
+                          <li class="mb-3 text-main-colors">
                             Если обладатель подарочной карты не воспользуется ей
                             сразу же, Giftery пришлет напоминание о сроке
                             действия сертификата по электронной почте.
@@ -864,14 +875,17 @@
               <div
                 class="card-body d-flex flex-column align-items-center custom_index_block3_card_body"
               >
-                <i class="bi bi-gift-fill" style="font-size: 50px"></i>
-                <p class="card-text text-center">
+                <i
+                  class="bi bi-gift-fill title-colors"
+                  style="font-size: 50px"
+                ></i>
+                <p class="card-text text-center text-main-colors">
                   Что такое Универсальный подарочный сертификат Giftery Card?
                 </p>
                 <div
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal3"
-                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto"
+                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto title-colors"
                 >
                   <!-- Button trigger modal -->
                   <p class="card-link custom_index_block3_card_link my-0 mx-3">
@@ -891,7 +905,10 @@
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        <h1
+                          class="modal-title fs-5 title-colors"
+                          id="exampleModalLabel"
+                        >
                           Что такое Универсальный подарочный сертификат Giftery
                           Card?
                         </h1>
@@ -903,11 +920,13 @@
                         ></button>
                       </div>
                       <div class="modal-body">
-                        <p class="mb-3">
+                        <p class="mb-3 title-colors">
                           Giftery Card — идеальный вариант если не знаете что
                           подарить! И вот почему:
                         </p>
-                        <ul class="custom_index_block3_card_link_exampleModal">
+                        <ul
+                          class="custom_index_block3_card_link_exampleModal text-main-colors"
+                        >
                           <li>
                             Универсальная карта Giftery Card отправляется на
                             email мгновенно или по расписанию.
@@ -923,10 +942,12 @@
                             компаний.
                           </li>
                         </ul>
-                        <h5 class="fw-bolder mb-3">
+                        <h5 class="fw-bolder mb-3 title-colors">
                           Преимущества Giftery Card для корпоративных клиентов:
                         </h5>
-                        <ul class="custom_index_block3_card_link_exampleModal">
+                        <ul
+                          class="custom_index_block3_card_link_exampleModal text-main-colors"
+                        >
                           <li>
                             Брендирование бесплатно. Giftery Card может быть
                             оформлен в соответствии с фирменным стилем Вашей
@@ -938,7 +959,7 @@
                             России и подробный отчет о доставке.
                           </li>
                         </ul>
-                        <p class="mt-3">
+                        <p class="mt-3 text-main-colors">
                           Смотрите видео на этой странице: "Как оформить,
                           отправить и воспользоваться Giftery card"
                         </p>
@@ -953,16 +974,16 @@
                 class="card-body d-flex flex-column align-items-center custom_index_block3_card_body"
               >
                 <i
-                  class="bi bi-envelope-paper-fill"
+                  class="bi bi-envelope-paper-fill title-colors"
                   style="font-size: 50px"
                 ></i>
-                <p class="card-text text-center">
+                <p class="card-text text-center text-main-colors">
                   Как воспользоваться полученным сертификатом Giftery Card?
                 </p>
                 <div
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal4"
-                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto"
+                  class="d-flex flex-wrap justify-content-between align-items-center mt-auto title-colors"
                 >
                   <!-- Button trigger modal -->
                   <p class="card-link custom_index_block3_card_link my-0 mx-3">
@@ -982,7 +1003,10 @@
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        <h1
+                          class="modal-title fs-5 title-colors"
+                          id="exampleModalLabel"
+                        >
                           Как воспользоваться полученным сертификатом Giftery
                           Card?
                         </h1>
@@ -994,19 +1018,19 @@
                         ></button>
                       </div>
                       <div class="modal-body">
-                        <h5 class="fw-bolder mb-3">Шаг 1</h5>
-                        <p class="mb-5">
+                        <h5 class="fw-bolder mb-3 title-colors">Шаг 1</h5>
+                        <p class="mb-5 text-main-colors">
                           В полученном email-письме нажмите на оранжевую кнопку
                           «Активация»
                         </p>
-                        <h5 class="fw-bolder mb-3">Шаг 2</h5>
-                        <p class="mb-5">
+                        <h5 class="fw-bolder mb-3 title-colors">Шаг 2</h5>
+                        <p class="mb-5 text-main-colors">
                           Вы попадёте в раздел Каталог, где представлены более
                           100 брендов. Обменять Giftery Card можно на один или
                           несколько подарочных сертификатов выбранных брендов.
                         </p>
-                        <h5 class="fw-bolder mb-3">Шаг 3</h5>
-                        <p class="mb-5">
+                        <h5 class="fw-bolder mb-3 title-colors">Шаг 3</h5>
+                        <p class="mb-5 text-main-colors">
                           Подарочный сертификат выбранного Вами бренда мгновенно
                           придёт на электронную почту в виде PDF-файла.
                           Сертификат можно распечатать и предъявить на кассе
@@ -1025,7 +1049,9 @@
 
         <div class="col-12 mt-5 mb-5">
           <!--------------------- БЛОК - 4 Выбирайте из 300 подарочных ------------------->
-          <div class="container d-flex justify-content-center flex-wrap">
+          <div
+            class="container d-flex justify-content-center flex-wrap title-colors"
+          >
             <h3>Выбирайте из 300 подарочных карт известных брендов!</h3>
             <h6>
               Дарите друзьям, вознаграждайте клиентов и сотрудников - мгновенная
@@ -1040,19 +1066,19 @@
                 <div>
                   <img
                     src="./img/lorem-inage-default1.jpg"
-                    class="img-thumbnail"
+                    class="img-thumbnail mb-3"
                   />
                   <h5 class="card-title mb-5">
                     Подписка на онлайн-кинотеатр PREMIER
                   </h5>
                 </div>
                 <div>
-                  <p class="card-text">Номинал</p>
+                  <p class="card-text text-main-colors">Номинал</p>
                   <h5 class="card-text">От 149 до 799</h5>
                   <!-- Button trigger modal -->
                   <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn btn-light accent-colors text-accent-colors w-100"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal6"
                   >
@@ -1068,10 +1094,13 @@
                     aria-hidden="true"
                   >
                     <div class="modal-dialog modal-lg modal-dialog-centered">
-                      <div class="modal-content">
+                      <div class="modal-content bg-accent-colors">
                         <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">
-                            Modal title
+                          <h1
+                            class="modal-title fs-5 title-colors"
+                            id="exampleModalLabel"
+                          >
+                            Giftery Card
                           </h1>
                           <button
                             type="button"
@@ -1086,10 +1115,11 @@
                           >
                             <img
                               src="./img/lorem-inage-default1.jpg"
-                              class="img-thumbnail modal-body__image-size m-3"
+                              class="img-thumbnail modal-body__image-size m-3 mb-3"
                             />
-                            <div class="px-2 modal-body__description-size m-3">
-                              <h4 class="mb-3">Giftery Card</h4>
+                            <div
+                              class="px-2 modal-body__description-size m-3 text-main-colors"
+                            >
                               <p>
                                 Дарите только нужные подарки. Получатель сможет
                                 обменять Giftery Card на подарочные карты
@@ -1102,33 +1132,31 @@
                           <div
                             class="d-flex justify-content-around flex-wrap mb-5"
                           >
-                            <a href="pages/card-page.html"
-                              ><button
-                                type="button"
-                                class="btn btn-secondary btn-lg rounded-5 m-3 modal-body__button-size"
-                              >
-                                Отправить себе
-                              </button></a
+                            <a
+                              href="pages/card-page.html"
+                              class="btn btn-light btn-lg rounded-5 m-3 modal-body__button-size accent-colors text-accent-colors"
                             >
-                            <a href="pages/card-page.html"
-                              ><button
-                                type="button"
-                                class="btn btn-primary btn-lg rounded-5 m-3 modal-body__button-size"
-                              >
-                                Отправить в подарок
-                              </button></a
+                              Отправить себе
+                            </a>
+                            <a
+                              href="pages/card-page.html"
+                              class="btn btn-light btn-lg rounded-5 m-3 modal-body__button-size over-accent-color text-accent-colors"
                             >
+                              Отправить в подарок
+                            </a>
                           </div>
                           <div
-                            class="container-fluid d-flex justify-content-around flex-wrap mb-5 bg-primary p-3"
+                            class="container-fluid d-flex justify-content-around flex-wrap mb-5 p-3 accent-colors"
                           >
                             <div
                               class="card d-flex flex-column align-items-center rounded-3 m-3"
                               style="width: 18rem"
                             >
-                              <i class="bi bi-mailbox-flag fs-1"></i>
+                              <i
+                                class="bi bi-mailbox-flag fs-1 title-colors"
+                              ></i>
                               <div class="card-body">
-                                <p class="card-text">
+                                <p class="card-text text-main-colors">
                                   Обменяйте Giftery Card в рамках номинала на
                                   один или несколько сертификатов из каталога
                                   Giftery
@@ -1139,9 +1167,11 @@
                               class="card d-flex flex-column align-items-center rounded-3 m-3"
                               style="width: 18rem"
                             >
-                              <i class="bi bi-mailbox-flag fs-1"></i>
+                              <i
+                                class="bi bi-mailbox-flag fs-1 title-colors"
+                              ></i>
                               <div class="card-body">
-                                <p class="card-text">
+                                <p class="card-text text-main-colors">
                                   Обменяйте Giftery Card в рамках номинала на
                                   один или несколько сертификатов из каталога
                                   Giftery
@@ -1153,17 +1183,19 @@
                             <div
                               class="px-2 custom_index_block3_card_modal_description"
                             >
-                              <h4 class="mb-3 fw-bolder">
+                              <h4 class="mb-3 fw-bolder title-colors">
                                 Корпоративный заказ
                               </h4>
-                              <p>Закажите подарочные карты оптом.</p>
+                              <p class="text-main-colors">
+                                Закажите подарочные карты оптом.
+                              </p>
                             </div>
-                            <button
-                              type="button"
-                              class="btn btn-primary btn-lg rounded-5 m-3 custom_index_block3_card_modal_buttons"
+                            <a
+                              href="#"
+                              class="btn btn-light btn-lg rounded-5 m-3 accent-colors text-accent-colors"
                             >
                               Оставить заявку
-                            </button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -1174,11 +1206,12 @@
             </div>
 
             <div class="container d-flex justify-content-center flex-wrap py-5">
-              <a href="pages/catalog-page.html">
-                <button type="button" class="btn btn-primary btn-lg rounded-5">
-                  Купить подарочную карту
-                </button></a
+              <a
+                href="pages/catalog-page.html"
+                class="btn btn-light btn-lg rounded-5 over-accent-color text-accent-colors"
               >
+                Купить подарочную карту
+              </a>
             </div>
           </div>
         </div>
@@ -1186,12 +1219,14 @@
         <div class="col-12 mt-5 mb-5">
           <!--------------------- БЛОК - 5 Ассортимент подарочных ------------------->
           <div
-            class="container d-flex justify-content-center flex-wrap mt-5 mb-5"
+            class="container d-flex justify-content-center flex-wrap mt-5 mb-5 title-colors"
           >
             <h2>Ассортимент подарочных сертификатов</h2>
           </div>
           <div class="container">
-            <div class="d-flex justify-content-center align-items-center">
+            <div
+              class="d-flex justify-content-center align-items-center text-main-colors"
+            >
               <p>
                 Компания Giftery осуществляет продажу подарочных карт для женщин
                 и мужчин в таких категориях:
@@ -1200,12 +1235,12 @@
 
             <ul class="container d-flex justify-content-around flex-wrap">
               <li
-                class="text-center d-flex flex-column j"
+                class="text-center d-flex flex-column"
                 style="margin: 10px; max-width: 150px"
               >
-                <i class="bi bi-house fs-1"></i>
+                <i class="title-colors bi bi-house fs-1"></i>
                 <a
-                  class="container__block5-link-list"
+                  class="container__block5-link-list text-main-colors"
                   href="pages/catalog-page.html"
                   >Mагазины бытовой техники</a
                 >
@@ -1214,9 +1249,9 @@
                 class="text-center d-flex flex-column"
                 style="margin: 10px; max-width: 150px"
               >
-                <i class="bi bi-bag-heart fs-1"></i>
+                <i class="title-colors bi bi-bag-heart fs-1"></i>
                 <a
-                  class="container__block5-link-list"
+                  class="container__block5-link-list text-main-colors"
                   href="pages/catalog-page.html"
                   >Популярные магазины косметики</a
                 >
@@ -1225,9 +1260,9 @@
                 class="text-center d-flex flex-column j"
                 style="margin: 10px; max-width: 150px"
               >
-                <i class="bi bi-bag fs-1"></i>
+                <i class="title-colors bi bi-bag fs-1"></i>
                 <a
-                  class="container__block5-link-list"
+                  class="container__block5-link-list text-main-colors"
                   href="pages/catalog-page.html"
                   >Магазины одежды и обуви</a
                 >
@@ -1236,9 +1271,9 @@
                 class="text-center d-flex flex-column"
                 style="margin: 10px; max-width: 150px"
               >
-                <i class="bi bi-gem fs-1"></i>
+                <i class="title-colors bi bi-gem fs-1"></i>
                 <a
-                  class="container__block5-link-list"
+                  class="container__block5-link-list text-main-colors"
                   href="pages/catalog-page.html"
                   >Ювелирные салоны</a
                 >
@@ -1247,9 +1282,9 @@
                 class="text-center d-flex flex-column j"
                 style="margin: 10px; max-width: 150px"
               >
-                <i class="bi bi-balloon-fill fs-1"></i>
+                <i class="title-colors bi bi-balloon-fill fs-1"></i>
                 <a
-                  class="container__block5-link-list"
+                  class="container__block5-link-list text-main-colors"
                   href="pages/catalog-page.html"
                   >Детские товары</a
                 >
@@ -1258,9 +1293,9 @@
                 class="text-center d-flex flex-column"
                 style="margin: 10px; max-width: 150px"
               >
-                <i class="bi bi-clipboard-heart-fill fs-1"></i>
+                <i class="title-colors bi bi-clipboard-heart-fill fs-1"></i>
                 <a
-                  class="container__block5-link-list"
+                  class="container__block5-link-list text-main-colors"
                   href="pages/catalog-page.html"
                   >Салоны красоты</a
                 >
@@ -1269,9 +1304,9 @@
                 class="text-center d-flex flex-column j"
                 style="margin: 10px; max-width: 150px"
               >
-                <i class="bi bi-fire fs-1"></i>
+                <i class="title-colors bi bi-fire fs-1"></i>
                 <a
-                  class="container__block5-link-list"
+                  class="container__block5-link-list text-main-colors"
                   href="pages/catalog-page.html"
                   >Развлечения</a
                 >
@@ -1280,9 +1315,9 @@
                 class="text-center d-flex flex-column"
                 style="margin: 10px; max-width: 150px"
               >
-                <i class="bi bi-airplane fs-1"></i>
+                <i class="title-colors bi bi-airplane fs-1"></i>
                 <a
-                  class="container__block5-link-list"
+                  class="container__block5-link-list text-main-colors"
                   href="pages/catalog-page.html"
                   >Путешествия и многое другое</a
                 >
@@ -1295,7 +1330,7 @@
               data-bs-toggle="modal"
               data-bs-target="#exampleModal14"
               type="button"
-              class="btn btn-primary btn-lg rounded-5"
+              class="btn btn-light btn-lg rounded-5 accent-colors text-accent-colors"
             >
               Читать дальше
             </button>
@@ -1317,7 +1352,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body text-main-colors">
                     <p>
                       У нас можно купить подарочные сертификаты магазинов в
                       электронном виде с мгновенной доставкой по email или
@@ -1349,7 +1384,7 @@
         <div class="col-12 mt-5 mb-5">
           <!--------------------- БЛОК - 6 Как воспользоваться полученной ------------------->
           <div
-            class="container d-flex justify-content-center flex-wrap mt-5 mb-5"
+            class="container d-flex justify-content-center flex-wrap mt-5 mb-5 title-colors"
           >
             <h2>
               Как воспользоваться полученной электронной подарочной картой?
@@ -1411,19 +1446,17 @@
               </div>
             </div>
             <div class="container d-flex justify-content-around flex-wrap my-5">
-              <a href="pages/catalog-page.html"
-                ><button type="button" class="btn btn-primary btn-lg rounded-5">
-                  Отправить карту
-                </button></a
+              <a
+                href="pages/catalog-page.html"
+                class="btn btn-light btn-lg rounded-5 accent-colors text-accent-colors"
               >
+                Отправить карту
+              </a>
             </div>
           </div>
         </div>
 
-        <div
-          class="col-12 mt-5 mb-5 pt-5 pb-5"
-          style="background-color: #fa6400"
-        >
+        <div class="col-12 mt-5 mb-5 pt-5 pb-5 bg-accent-colors">
           <!--------------------- БЛОК - 7 Подарки к Новому году с Giftery! ------------------->
           <div class="container d-flex justify-content-center flex-wrap my-5">
             <div class="container d-flex justify-content-center flex-wrap">
@@ -1431,8 +1464,8 @@
                 <img src="./img/slider-test-img.png" class="img-thumbnail" />
               </div>
               <div class="m-4" style="width: 500px">
-                <h1>Подарки к Новому году с Giftery!</h1>
-                <p>
+                <h1 class="title-colors">Подарки к Новому году с Giftery!</h1>
+                <p class="text-main-colors">
                   В период с 1 по 28 декабря у вас есть возможность приобрести
                   подарочные сертификаты от наших партнеров со скидками до 70%
                   для ваших близких, друзей и коллег.
@@ -1441,56 +1474,57 @@
             </div>
           </div>
           <div class="container d-flex justify-content-around flex-wrap">
-            <a href="pages/card-page.html"
-              ><button type="button" class="btn btn-primary btn-lg rounded-5">
-                Подарить карту
-              </button></a
+            <a
+              href="pages/card-page.html"
+              class="btn btn-light btn-lg rounded-5 accent-colors text-accent-colors"
             >
+              Подарить карту
+            </a>
           </div>
         </div>
 
         <div class="col-12 mt-5 mb-5">
           <!--------------------- БЛОК - 8 Возможности Универсальной------------------->
           <div
-            class="container d-flex justify-content-center flex-wrap mb-5 text-center"
+            class="container d-flex justify-content-center flex-wrap mb-5 text-center title-colors"
           >
             <h3>Возможности Универсальной подарочной карты Giftery Card</h3>
           </div>
           <div class="container d-flex justify-content-center flex-wrap">
             <div class="card" style="width: 24rem; padding: 15px; margin: 10px">
               <div class="card-body">
-                <i class="bi bi-heart fs-1"></i>
-                <p class="card-text">
+                <i class="title-colors bi bi-heart fs-1"></i>
+                <p class="card-text text-main-colors">
                   Обмен на любой из более чем 300 известных брендов
                 </p>
               </div>
             </div>
             <div class="card" style="width: 24rem; padding: 15px; margin: 10px">
               <div class="card-body">
-                <i class="bi bi-image fs-1"></i>
-                <p class="card-text">
+                <i class="title-colors bi bi-image fs-1"></i>
+                <p class="card-text text-main-colors">
                   Оформление в фирменном стиле компании или тематике праздника
                 </p>
               </div>
             </div>
             <div class="card" style="width: 24rem; padding: 15px; margin: 10px">
               <div class="card-body">
-                <i class="bi bi-phone fs-1"></i>
-                <p class="card-text">
+                <i class="title-colors bi bi-phone fs-1"></i>
+                <p class="card-text text-main-colors">
                   Выпуск в электронном или пластиковом виде
                 </p>
               </div>
             </div>
           </div>
           <div
-            class="container d-flex justify-content-center flex-wrap mt-5 mb-5"
+            class="container d-flex justify-content-center flex-wrap mt-5 mb-5 title-colors"
           >
             <h3>
               Преимущества Электронных подарочных сертификатов для корпоративных
               клиентов
             </h3>
           </div>
-          <div class="container">
+          <div class="container text-main-colors">
             <p class="fw-bolder">
               1. Экономия бюджета до 20% на подарки для промо-акций, программ
               мотивации и лояльности
@@ -1507,7 +1541,7 @@
               data-bs-toggle="modal"
               data-bs-target="#exampleModal21"
               type="button"
-              class="btn btn-primary btn-lg rounded-5"
+              class="btn btn-light btn-lg rounded-5 accent-colors text-accent-colors"
             >
               Узнать больше
             </button>
@@ -1533,11 +1567,11 @@
                     <ol>
                       <li>
                         <div>
-                          <p class="fw-bolder">
+                          <p class="fw-bolder title-colors">
                             Экономия бюджета до 20% на подарки для промо-акций,
                             программ мотивации и лояльности
                           </p>
-                          <p>
+                          <p class="text-main-colors">
                             Электронные сертификаты отправляются на email и дают
                             значительную экономию на логистике — нет
                             производства, хранения, упаковки и доставки, как в
@@ -1546,8 +1580,8 @@
                         </div>
                       </li>
                       <li>
-                        <div>
-                          <p class="fw-bolder">
+                        <div class="text-main-colors">
+                          <p class="fw-bolder title-colors">
                             Скорость и удобство организации корпоративных
                             закупок
                           </p>
@@ -1596,7 +1630,9 @@
 
         <div class="col-12 mt-5 mb-5">
           <!--------------------- БЛОК - 9 Наши клиенты ------------------->
-          <div class="container d-flex justify-content-center flex-wrap mb-5">
+          <div
+            class="container d-flex justify-content-center flex-wrap mb-5 title-colors"
+          >
             <h3>Наши клиенты</h3>
           </div>
           <div
@@ -1607,7 +1643,9 @@
 
         <div class="col-12 mt-5 mb-5">
           <!--------------------- БЛОК - 10  СЛАЙДЕР ОТЗЫВОВ ------------------->
-          <div class="container d-flex justify-content-center flex-wrap mb-5">
+          <div
+            class="container d-flex justify-content-center flex-wrap mb-5 title-colors"
+          >
             <h3 class="fw-bolder">Отзывы B2B-клиентов</h3>
           </div>
           <div
@@ -1638,20 +1676,19 @@
             </div>
             <div class="carousel-inner">
               <div
-                class="carousel-item active"
+                class="carousel-item active bg-accent-colors"
                 data-bs-interval="10000"
-                style="background-color: lightgray"
               >
                 <div
                   class="container d-flex justify-content-between flex-wrap my-5"
                 >
-                  <div class="mx-5">
-                    <h3 class="">Фанаты Сервиса</h3>
-                    <p class="">
+                  <div class="mx-5 title-colors">
+                    <h3>Фанаты Сервиса</h3>
+                    <p class="text-main-colors">
                       «Фанаты Сервиса» - сообщество профессионалов и экспертов в
                       клиентском опыте и сервисе.
                     </p>
-                    <p class="">
+                    <p class="text-main-colors">
                       Мы используем электронные подарочные сертификаты Giftery
                       как инструмент для повышения лояльности клиентов компаний,
                       которые входят в сообщество.
@@ -1671,20 +1708,19 @@
                 </div>
               </div>
               <div
-                class="carousel-item"
+                class="carousel-item bg-accent-colors"
                 data-bs-interval="10000"
-                style="background-color: lightgray"
               >
                 <div
                   class="container d-flex justify-content-between flex-wrap my-5"
                 >
-                  <div class="mx-5">
-                    <h3 class="">Фанаты Сервиса</h3>
-                    <p class="">
+                  <div class="mx-5 title-colors">
+                    <h3>Фанаты Сервиса</h3>
+                    <p class="text-main-colors">
                       «Фанаты Сервиса» - сообщество профессионалов и экспертов в
                       клиентском опыте и сервисе.
                     </p>
-                    <p class="">
+                    <p class="text-main-colors">
                       Мы используем электронные подарочные сертификаты Giftery
                       как инструмент для повышения лояльности клиентов компаний,
                       которые входят в сообщество.
@@ -1704,20 +1740,19 @@
                 </div>
               </div>
               <div
-                class="carousel-item"
+                class="carousel-item bg-accent-colors"
                 data-bs-interval="10000"
-                style="background-color: lightgray"
               >
                 <div
                   class="container d-flex justify-content-between flex-wrap my-5"
                 >
-                  <div class="mx-5">
-                    <h3 class="">Фанаты Сервиса</h3>
-                    <p class="">
+                  <div class="mx-5 title-colors">
+                    <h3>Фанаты Сервиса</h3>
+                    <p class="text-main-colors">
                       «Фанаты Сервиса» - сообщество профессионалов и экспертов в
                       клиентском опыте и сервисе.
                     </p>
-                    <p class="">
+                    <p class="text-main-colors">
                       Мы используем электронные подарочные сертификаты Giftery
                       как инструмент для повышения лояльности клиентов компаний,
                       которые входят в сообщество.
@@ -1763,123 +1798,180 @@
             </button>
           </div>
           <div class="container d-flex justify-content-around flex-wrap">
-            <button type="button" class="btn btn-primary btn-lg rounded-5">
+            <a
+              href="#"
+              class="btn btn-light btn-lg rounded-5 accent-colors text-accent-colors"
+            >
               Читать другие отзывы
-            </button>
+            </a>
           </div>
         </div>
 
-        <div class="col-12 mt-5 pt-5 pb-5" style="background-color: #0b132a">
+        <div class="col-12 mt-5 pt-5 pb-5 bg-accent-colors">
           <!--------------------- БЛОК ФУТТЕР ------------------->
           <footer class="container">
-            <div style="color: white">
-              <h1 class="logo">LOGO</h1>
+            <div>
+              <h1 class="logo title-colors">LOGO</h1>
             </div>
             <div class="d-flex flex-wrap">
-              <nav class="nav flex-column" style="color: white">
+              <nav class="nav flex-column title-colors">
                 <h4>Подарочные карты</h4>
                 <a
-                  class="nav-link active"
+                  class="nav-link active text-main-colors text-main-colors"
                   aria-current="page"
-                  href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                  href="pages/catalog-page.html"
                   >Каталог</a
                 >
                 <a
-                  class="nav-link"
-                  href="file:///home/ubuntu/monopoly-front-project/pages/catalog-page.html"
+                  class="nav-link text-main-colors"
+                  href="pages/catalog-page.html"
                   >Благотворительность</a
                 >
-                <a class="nav-link" href="#">Активация карт сотовой связи</a>
-                <a class="nav-link" href="#">Обменять Giftery Card</a>
+                <a class="nav-link text-main-colors" href="#"
+                  >Активация карт сотовой связи</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >Обменять Giftery Card</a
+                >
               </nav>
-              <nav class="nav flex-column" style="color: white">
+              <nav class="nav flex-column title-colors">
                 <h4>О компании</h4>
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link text-main-colors active text-main-colors"
+                  aria-current="page"
+                  href="#"
                   >О Giftery</a
                 >
-                <a class="nav-link" href="#">Пресса о нас</a>
-                <a class="nav-link" href="#">Новости</a>
-                <a class="nav-link" href="#">Бонусная программа</a>
-                <a class="nav-link" href="#">Карьера в Giftery</a>
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#">Пресса о нас</a>
+                <a class="nav-link text-main-colors" href="#">Новости</a>
+                <a class="nav-link text-main-colors" href="#"
+                  >Бонусная программа</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >Карьера в Giftery</a
+                >
+                <a class="nav-link text-main-colors" href="#">
                   О деятельности ИТ-компании <br />
                   ООО «ГИФТЕРИ»</a
                 >
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#">
                   О деятельности ИТ-компании<br />
                   ООО «ГИФТЕРИ.РУ»</a
                 >
-                <a class="nav-link" href="#">Оферта для физ. лиц</a>
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#"
+                  >Оферта для физ. лиц</a
+                >
+                <a class="nav-link text-main-colors" href="#">
                   Оферта для корпоративных <br />
                   клиентов</a
                 >
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#">
                   Оферта для партнеров <br />(ритейлеров)</a
                 >
-                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link text-main-colors" href="#">Контакты</a>
               </nav>
-              <nav class="nav flex-column" style="color: white">
+              <nav class="nav flex-column title-colors">
                 <h4>Корпоративным клиентам</h4>
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link text-main-colors active text-main-colors"
+                  aria-current="page"
+                  href="#"
                   >Active</a
                 >
-                <a class="nav-link" href="#"> Корпоративным клиентам</a>
-                <a class="nav-link" href="#"> Электронные подарочные карты</a>
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#">
+                  Корпоративным клиентам</a
+                >
+                <a class="nav-link text-main-colors" href="#">
+                  Электронные подарочные карты</a
+                >
+                <a class="nav-link text-main-colors" href="#">
                   Универсальная подарочная карта Giftery Card</a
                 >
-                <a class="nav-link" href="#">Подарочные карты магазинов</a>
-                <a class="nav-link" href="#">Банковские подарочные карты</a>
-                <a class="nav-link" href="#">Топливные подарочные карты</a>
-                <a class="nav-link" href="#">Карты оплаты мобильной связи</a>
-                <a class="nav-link" href="#">Кейсы клиентов Giftery</a>
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#"
+                  >Подарочные карты магазинов</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >Банковские подарочные карты</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >Топливные подарочные карты</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >Карты оплаты мобильной связи</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >Кейсы клиентов Giftery</a
+                >
+                <a class="nav-link text-main-colors" href="#">
                   Видеоуроки по автоматизации <br />программ мотивациии</a
                 >
-                <a class="nav-link" href="#"> API интеграция</a>
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#">
+                  API интеграция</a
+                >
+                <a class="nav-link text-main-colors" href="#">
                   Виджет для продажи подарочных карт</a
                 >
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#">
                   Запустите новый канал продаж за 1 день</a
                 >
-                <a class="nav-link" href="#">Витрина вознаграждений</a>
-                <a class="nav-link" href="#">Личный кабинет для ритейлеров</a>
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#"
+                  >Витрина вознаграждений</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >Личный кабинет для ритейлеров</a
+                >
+                <a class="nav-link text-main-colors" href="#">
                   Личный кабинет для корпоративных клиентов</a
                 >
               </nav>
-              <nav class="nav flex-column" style="color: white">
+              <nav class="nav flex-column title-colors">
                 <h4>Прочее</h4>
-                <a class="nav-link" href="#"> API интеграция</a>
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#">
+                  API интеграция</a
+                >
+                <a class="nav-link text-main-colors" href="#">
                   Виджет для продажи подарочных карт</a
                 >
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#">
                   Запустите новый канал продаж за 1 день</a
                 >
-                <a class="nav-link" href="#">Витрина вознаграждений</a>
-                <a class="nav-link" href="#">Личный кабинет для ритейлеров</a>
-                <a class="nav-link" href="#">
+                <a class="nav-link text-main-colors" href="#"
+                  >Витрина вознаграждений</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >Личный кабинет для ритейлеров</a
+                >
+                <a class="nav-link text-main-colors" href="#">
                   Личный кабинет для корпоративных клиентов</a
                 >
               </nav>
-              <nav class="nav flex-column" style="color: white">
+              <nav class="nav flex-column title-colors">
                 <h4>Контакты</h4>
                 <p>
                   Клиентская поддержка для физических лиц по вопросам покупки,
                   отправки, использования сертификатов
                 </p>
-                <a class="nav-link" href="#">8 800 551 46 19</a>
-                <a class="nav-link" href="#">+7 499 653 84 68</a>
-                <a class="nav-link" href="#">support@giftery.ru</a>
+                <a class="nav-link text-main-colors" href="#"
+                  >8 800 551 46 19</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >+7 499 653 84 68</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >support@giftery.ru</a
+                >
                 <p>Отдел продаж (для юридических лиц)</p>
-                <a class="nav-link" href="#">+7 499 444 32 57</a>
-                <a class="nav-link" href="#">b2b@giftery.ru</a>
+                <a class="nav-link text-main-colors" href="#"
+                  >+7 499 444 32 57</a
+                >
+                <a class="nav-link text-main-colors" href="#">b2b@giftery.ru</a>
                 <p>Отдел продаж (для юридических лиц)</p>
-                <a class="nav-link" href="#">+7 (499) 302 36 32</a>
-                <a class="nav-link" href="#">partners@giftery.ru</a>
+                <a class="nav-link text-main-colors" href="#"
+                  >+7 (499) 302 36 32</a
+                >
+                <a class="nav-link text-main-colors" href="#"
+                  >partners@giftery.ru</a
+                >
               </nav>
             </div>
           </footer>

@@ -1,5 +1,31 @@
 body {
-  background-color: #f9fafb;
+  background-color: #fffdfa;
+}
+
+/*КЛАССЫ НИЖЕ ОТВЕЧАЮТ ЗА ЦВЕТОВУЮ ПОЛИТРУ КЛАССА*/
+
+.bg-accent-colors {
+  background-color: #f7f4ef;
+}
+
+.accent-colors {
+  background-color: #a1814e;
+}
+
+.over-accent-color {
+  background-color: #334a6a;
+}
+
+.title-colors {
+  color: #334a6a;
+}
+
+.text-main-colors {
+  color: #77787a;
+}
+
+.text-accent-colors {
+  color: #f7f4ef;
 }
 
 /*  ЭТО СТИЛИ ДЛЯ КОРРЕКТНОЙ РАБОТЫ КОНТЕНТА МОДАЛЬНЫХ ОКОН НА ВСЕХ СТРАНИЦАХ */
