@@ -4,6 +4,27 @@ body {
 
 /*КЛАССЫ НИЖЕ ОТВЕЧАЮТ ЗА ЦВЕТОВУЮ ПОЛИТРУ КЛАССА*/
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #334a6a;
+}
+
+p {
+  color: #77787a;
+}
+
+a {
+  color: #334a6a;
+}
+
+i {
+  color: #334a6a;
+}
+
 .bg-accent-colors {
   background-color: #f7f4ef;
 }
@@ -16,16 +37,16 @@ body {
   background-color: #334a6a;
 }
 
-.title-colors {
-  color: #334a6a;
+.text-accent-colors {
+  color: #f7f4ef;
 }
 
-.text-main-colors {
+.text-main-colors-lists li a {
   color: #77787a;
 }
 
-.text-accent-colors {
-  color: #f7f4ef;
+.accent-colors-list li a {
+  background-color: #a1814e;
 }
 
 /*  ЭТО СТИЛИ ДЛЯ КОРРЕКТНОЙ РАБОТЫ КОНТЕНТА МОДАЛЬНЫХ ОКОН НА ВСЕХ СТРАНИЦАХ */
