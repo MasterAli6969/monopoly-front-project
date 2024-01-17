@@ -25,6 +25,10 @@ i {
   color: #334a6a;
 }
 
+.bg-main-colors {
+  background-color: #ffffff;
+}
+
 .bg-accent-colors {
   background-color: #f7f4ef;
 }

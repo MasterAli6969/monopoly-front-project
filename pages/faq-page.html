@@ -35,7 +35,7 @@
     <div class="container-fluid p-0">
       <!--------------------- ХЕДЕР ------------------->
       <nav class="mb-5">
-        <div class="bg-white shadow-lg">
+        <div class="shadow-lg">
           <div class="container">
             <nav class="navbar navbar-expand-lg">
               <div class="container px-0 d-block">
@@ -43,7 +43,7 @@
                   class="d-flex justify-content-between align-items-center w-100"
                 >
                   <div class="d-none nav-menu__logo-mobile">
-                    <h1>Logo</h1>
+                    <a href="index.html"><h1>Logo</h1></a>
                   </div>
                   <button
                     class="navbar-toggler"
@@ -71,31 +71,25 @@
                     <div
                       class="d-flex align-items-center flex-wrap navbar-collapse__menu-item"
                     >
-                      <a href="pages/user-profile.html"
-                        ><button
-                          type="button"
-                          class="btn btn-primary rounded-5"
-                        >
-                          Личный кабинет
-                        </button></a
+                      <a
+                        href="pages/user-profile.html"
+                        class="btn btn-light rounded-5 accent-colors text-accent-colors"
+                        >Личный кабинет</a
                       >
 
-                      <a href="pages/shopping-full-cart.html">
-                        <button
-                          type="button"
-                          class="btn btn-primary position-relative m-3 rounded-5"
+                      <a
+                        href="pages/shopping-full-cart.html"
+                        class="btn btn-light position-relative m-3 rounded-5 accent-colors"
+                      >
+                        <i class="bi bi-cart"></i>
+                        <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                         >
-                          <i class="bi bi-cart"></i>
-                          <span
-                            id="cartIconNumber"
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                          >
-                            0
-                            <span class="visually-hidden">unread messages</span>
-                          </span>
-                        </button>
+                          0
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
                       </a>
-                      <div class="">
+                      <div>
                         <select
                           class="form-select"
                           id="floatingSelect"
@@ -108,7 +102,7 @@
                       <div
                         class="w-70 d-flex justify-content-around align-items-center m-3 flex-wrap"
                       >
-                        <h4 class="">8 800 55 35 35</h4>
+                        <h4>8 800 55 35 35</h4>
                       </div>
                     </div>
                   </div>
@@ -416,12 +410,10 @@
       </nav>
       <!--------------------- ОСНОВНОЙ КОНТЕНТ ------------------->
       <div class="container">
-        <div
-          class="d-flex justify-content-center align-items-center mb-5 title-colors"
-        >
+        <div class="d-flex justify-content-center align-items-center mb-5">
           <h1>Часто задаваемые вопросы</h1>
         </div>
-        <ol class="text-main-colors-lists title-colors-list">
+        <ol class="text-main-colors-lists">
           <li class="mb-5">
             <h5 class="mb-3">Как зарегистрироваться на нашем веб-сайте?</h5>
             <p>
@@ -492,10 +484,10 @@
       <div class="col-12 mt-5 pt-5 pb-5 bg-accent-colors">
         <footer class="container">
           <div>
-            <h1 class="logo title-colors">LOGO</h1>
+            <h1 class="logo">LOGO</h1>
           </div>
           <div class="d-flex flex-wrap">
-            <ul class="nav flex-column title-colors text-main-colors-lists">
+            <ul class="nav flex-column text-main-colors-lists">
               <li><h4>Подарочные карты</h4></li>
               <li>
                 <a
@@ -515,7 +507,7 @@
               </li>
               <li><a class="nav-link" href="#">Обменять Giftery Card</a></li>
             </ul>
-            <ul class="nav flex-column title-colors text-main-colors-lists">
+            <ul class="nav flex-column text-main-colors-lists">
               <li><h4>О компании</h4></li>
               <li>
                 <a class="nav-link active" aria-current="page" href="#"
@@ -552,7 +544,7 @@
               </li>
               <li><a class="nav-link" href="#">Контакты</a></li>
             </ul>
-            <ul class="nav flex-column title-colors text-main-colors-lists">
+            <ul class="nav flex-column text-main-colors-lists">
               <li><h4>Корпоративным клиентам</h4></li>
               <li>
                 <a class="nav-link active" aria-current="page" href="#"
@@ -609,7 +601,7 @@
                 >
               </li>
             </ul>
-            <ul class="nav flex-column title-colors text-main-colors-lists">
+            <ul class="nav flex-column text-main-colors-lists">
               <li><h4>Прочее</h4></li>
               <li><a class="nav-link" href="#"> API интеграция</a></li>
               <li>
@@ -632,7 +624,7 @@
                 >
               </li>
             </ul>
-            <nav class="nav flex-column title-colors">
+            <nav class="nav flex-column">
               <h4>Контакты</h4>
               <p>
                 Клиентская поддержка для физических лиц по вопросам покупки,
