@@ -1,8 +1,28 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/roboto/Roboto-Regular.ttf") format("woff2"),
+    url("/assets/fonts/roboto/Roboto-Regular.ttf") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/montserrat/static/Montserrat-Medium.ttf")
+      format("woff2"),
+    url("/assets/fonts/montserrat/static/Montserrat-Medium.ttf") format("woff");
+  font-style: normal;
+}
+
 body {
   background-color: #fffdfa;
 }
 
 /*КЛАССЫ НИЖЕ ОТВЕЧАЮТ ЗА ЦВЕТОВУЮ ПОЛИТРУ КЛАССА*/
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #77787a;
+}
 
 h1,
 h2,
@@ -10,19 +30,17 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ff790e;
-}
-
-p {
-  color: #77787a;
+  font-family: "Montserrat", sans-serif;
+  color: #2db6c6;
 }
 
 a {
-  color: #0abab3;
+  font-family: "Montserrat", sans-serif;
+  color: #81c390;
 }
 
 i {
-  color: #0abab3;
+  color: #81c390;
 }
 
 .bg-main-colors {
@@ -34,7 +52,7 @@ i {
 } */
 
 .accent-colors {
-  background-color: #037974;
+  background-color: #efc62d;
 }
 
 .over-accent-color {
@@ -50,7 +68,7 @@ i {
 }
 
 .accent-colors-list li a {
-  background-color: #037974;
+  background-color: #efc62d;
 }
 
 /*  ЭТО СТИЛИ ДЛЯ КОРРЕКТНОЙ РАБОТЫ КОНТЕНТА МОДАЛЬНЫХ ОКОН НА ВСЕХ СТРАНИЦАХ */
