@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #334a6a;
+  color: #ff790e;
 }
 
 p {
@@ -18,27 +18,27 @@ p {
 }
 
 a {
-  color: #334a6a;
+  color: #0abab3;
 }
 
 i {
-  color: #334a6a;
+  color: #0abab3;
 }
 
 .bg-main-colors {
   background-color: #ffffff;
 }
 
-.bg-accent-colors {
-  background-color: #f7f4ef;
-}
+/* .bg-accent-colors {
+  background-color: #b9f1ef;
+} */
 
 .accent-colors {
-  background-color: #a1814e;
+  background-color: #037974;
 }
 
 .over-accent-color {
-  background-color: #334a6a;
+  background-color: #288b88;
 }
 
 .text-accent-colors {
@@ -50,7 +50,7 @@ i {
 }
 
 .accent-colors-list li a {
-  background-color: #a1814e;
+  background-color: #037974;
 }
 
 /*  ЭТО СТИЛИ ДЛЯ КОРРЕКТНОЙ РАБОТЫ КОНТЕНТА МОДАЛЬНЫХ ОКОН НА ВСЕХ СТРАНИЦАХ */
