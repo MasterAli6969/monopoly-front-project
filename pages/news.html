@@ -22,8 +22,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../assets/css/card-page.css" />
-    <title>FAQ</title>
+    <link rel="stylesheet" href="../assets/css/news.css" />
+    <title>About Us</title>
   </head>
   <body>
     <div
@@ -44,7 +44,7 @@
                 >
                   <div class="d-none nav-menu__logo-mobile">
                     <a href="/monopoly-front-project"
-                      ><img src="/img/logo-mono.png" width="150" height="150"
+                      ><img src="../img/logo-mono.png" width="150" height="150"
                     /></a>
                   </div>
                   <button
@@ -59,7 +59,6 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                 </div>
-
                 <div
                   class="collapse navbar-collapse flex-column align-items-start py-3"
                   id="navbarNavDropdown"
@@ -71,7 +70,10 @@
                       class="d-flex align-items-center nav-menu__logo-desktop"
                     >
                       <a href="/monopoly-front-project"
-                        ><img src="/img/logo-mono.png" width="200" height="200"
+                        ><img
+                          src="../img/logo-mono.png"
+                          width="200"
+                          height="200"
                       /></a>
                     </div>
 
@@ -444,77 +446,141 @@
           </div>
         </div>
       </nav>
-      <!--------------------- ОСНОВНОЙ КОНТЕНТ ------------------->
       <div class="container">
-        <div class="d-flex justify-content-center align-items-center mb-5">
-          <h1>Часто задаваемые вопросы</h1>
+        <div class="row">
+          <div class="col-12 mb-5">
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap"
+            >
+              <div class="d-flex align-items-center m-5 flex-wrap">
+                <h2>Новости компании Монополия</h2>
+              </div>
+              <div class="d-flex align-items-center">
+                <img
+                  width="460"
+                  height="370"
+                  class="img-fluid"
+                  src="../img/news-page-lorem-blok1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <hr class="my-5" />
+          <!--------------------- Левый SIDEBAR ------------------->
+          <div class="col-md-3 col-sm-12 mb-5 p-3">
+            <form class="d-flex mb-5">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Поиск"
+                aria-label="Search"
+              />
+              <button class="btn btn-light accent-colors" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <div>
+              <h3 class="mb-3">Категории</h3>
+              <ul class="text-main-colors-lists">
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Мотивация сотрудников</a></li>
+                <li><a href="#">Календарь праздников и идеи подарков</a></li>
+                <li><a href="#">Прокачай себя!</a></li>
+                <li><a href="#">Благодарственные письма</a></li>
+                <li>
+                  <a href="#">Новинки в каталоге подарочных карт Giftery</a>
+                </li>
+                <li><a href="#">Исследования</a></li>
+                <li><a href="#">Лояльность клиентов</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Благотворительность</a></li>
+                <li>
+                  <a href="#">Разное</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--------------------- Карточки товаров ------------------->
+          <div class="col-md-9 col-sm-12 mb-5">
+            <div class="container d-flex justify-content-center flex-wrap">
+              <div class="card shadow-lg w-75 m-5">
+                <div
+                  class="card-body d-flex flex-column align-items-start justify-content-between card-body__hover"
+                >
+                  <div>
+                    <img
+                      src="../img/news-lorem-cart-image.jpg"
+                      class="img-thumbnail mb-3"
+                    />
+                    <p class="card-text">24 января 2024 г.</p>
+                    <h1>Сочная скидка от СберМаркет!</h1>
+                    <p class="card-title mb-5">
+                      С 24 по 31 января 2024 года мы предоставляем вам
+                      уникальную возможность приобрести электронные подарочные
+                      сертификаты СберМаркет со скидкой -5% на сайте Giftery!
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex flex-wrap justify-content-between align-items-center mt-auto"
+                  >
+                    <a href="#">
+                      <h6 class="card-link my-0 mx-3 card-body__hover-link">
+                        Читать далее
+                      </h6>
+                    </a>
+                    <i class="bi bi-arrow-right fs-2"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow-lg w-75 m-5">
+                <div
+                  class="card-body d-flex flex-column align-items-start justify-content-between card-body__hover"
+                >
+                  <div>
+                    <img
+                      src="../img/news-lorem-cart-image.jpg"
+                      class="img-thumbnail mb-3"
+                    />
+                    <p class="card-text">24 января 2024 г.</p>
+                    <h1>Сочная скидка от СберМаркет!</h1>
+                    <p class="card-title mb-5">
+                      С 24 по 31 января 2024 года мы предоставляем вам
+                      уникальную возможность приобрести электронные подарочные
+                      сертификаты СберМаркет со скидкой -5% на сайте Giftery!
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex flex-wrap justify-content-between align-items-center mt-auto"
+                  >
+                    <a href="#">
+                      <h6 class="card-link my-0 mx-3 card-body__hover-link">
+                        Читать далее
+                      </h6>
+                    </a>
+                    <i class="bi bi-arrow-right fs-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------- Пагинация ------------------->
+          <div class="col-12 mb-5 d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <hr />
         </div>
-        <ol class="text-main-colors-lists">
-          <li class="mb-5">
-            <h5 class="mb-3">Как зарегистрироваться на нашем веб-сайте?</h5>
-            <p>
-              Для регистрации просто перейдите на наш главный экран и нажмите
-              кнопку "Зарегистрироваться". Следуйте указаниям, введите
-              необходимую информацию и завершите процесс регистрации.
-            </p>
-          </li>
-          <li class="mb-5">
-            <h5 class="mb-3">Как восстановить пароль?</h5>
-            <p>
-              Если вы забыли пароль, перейдите на страницу входа и выберите
-              опцию "Забыли пароль?". Следуйте инструкциям для восстановления
-              доступа к вашей учетной записи.
-            </p>
-          </li>
-          <li class="mb-5">
-            <h5 class="mb-3">Как оформить заказ?</h5>
-            <p>
-              Выберите необходимые товары, добавьте их в корзину и перейдите к
-              оформлению заказа. Заполните требуемые данные для доставки и
-              выберите удобный метод оплаты.
-            </p>
-          </li>
-          <li class="mb-5">
-            <h5 class="mb-3">Как отследить статус заказа?</h5>
-            <p>
-              После оформления заказа вы получите уведомление с уникальным
-              номером заказа. Вы можете отслеживать его статус в разделе "Мои
-              заказы" на вашем профиле.
-            </p>
-          </li>
-          <li class="mb-5">
-            <h5 class="mb-3">Есть ли у нас программы лояльности?</h5>
-            <p>
-              Да, у нас есть программа лояльности для постоянных клиентов. Вы
-              получаете бонусы за каждую покупку, которые можно обменять на
-              скидки или подарки.
-            </p>
-          </li>
-          <li class="mb-5">
-            <h5 class="mb-3">Как связаться с нашей службой поддержки?</h5>
-            <p>
-              Если у вас есть вопросы или проблемы, свяжитесь с нашей службой
-              поддержки по электронной почте [ваша почта] или по телефону [ваш
-              номер телефона].
-            </p>
-          </li>
-          <li class="mb-5">
-            <h5 class="mb-3">Как вернуть или обменять товар?</h5>
-            <p>
-              Для возврата или обмена товара свяжитесь с нашей службой поддержки
-              в течение [указанный срок] дней с момента получения заказа.
-            </p>
-          </li>
-          <li class="mb-5">
-            <h5 class="mb-3">Какие методы оплаты принимаются?</h5>
-            <p>
-              Мы принимаем различные методы оплаты, такие как кредитные карты,
-              электронные кошельки и банковские переводы. Выберите удобный метод
-              при оформлении заказа. Если у вас возникли дополнительные вопросы,
-              не стесняйтесь связаться с нашей службой поддержки.
-            </p>
-          </li>
-        </ol>
       </div>
       <!--------------------- БЛОК ФУТТЕР ------------------->
       <div class="col-12 mt-5 pt-5 pb-5 bg-accent-colors shadow-lg">
@@ -688,6 +754,5 @@
         </footer>
       </div>
     </div>
-    <script src="../js/script.js"></script>
   </body>
 </html>

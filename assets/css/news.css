@@ -1,0 +1,8 @@
+.card-body__hover-link {
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.card-body__hover:hover .card-body__hover-link {
+  opacity: 1;
+}

@@ -64,7 +64,12 @@ i {
 }
 
 .text-main-colors-lists li a {
+  text-decoration: none;
   color: #77787a;
+}
+
+.text-main-colors-lists li a:hover {
+  color: #efc62d;
 }
 
 .accent-colors-list li a {
