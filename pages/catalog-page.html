@@ -13,7 +13,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="../assets/css/catalog.css" />
     <title>Catalog</title>
   </head>
   <body>
@@ -229,18 +229,14 @@
           </div>
           <!--------------------- Левый SIDEBAR ------------------->
           <div class="col-md-3 col-sm-12 mb-5 p-0">
-            <form class="d-flex mb-3">
+            <form class="d-flex flex-column mb-3">
               <input
-                class="form-control me-2"
+                class="form-control mb-3 rounded-5 form-control-search__input"
                 type="search"
                 placeholder="Поиск"
                 aria-label="Search"
               />
-              <button class="btn btn-light accent-colors" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
-            <div class="dropdown mb-3">
+               <div class="dropdown mb-3">
               <button
                 class="w-100 btn btn-light btn-lg dropdown-toggle rounded-5 accent-colors text-accent-colors"
                 type="button"
@@ -382,6 +378,17 @@
                 <li><a class="dropdown-item" href="#">День защиты детей</a></li>
                 <li><a class="dropdown-item" href="#">Выход на пенсию</a></li>
               </ul>
+            </div>
+            <div>
+              <button
+                type="submit"
+                href="user-profile.html"
+                class="btn btn-light rounded-5 over-accent-color text-accent-colors w-100 mt-5 fs-5"
+              >
+                Применить
+              </button>
+            </form>
+           
             </div>
           </div>
           <!--------------------- Карточки товаров ------------------->

@@ -3,3 +3,7 @@
   max-height: 300px;
   overflow-y: auto;
 }
+
+.form-control-search__input {
+  padding: 10px 16px 10px 16px;
+}
